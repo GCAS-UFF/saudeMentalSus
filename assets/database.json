@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Niterói",
+        "federationUnity": "RJ",
+        "servicesList": [
+            {
+                "institution": {
+                    "name": "Ambulatório de Jurujuba",
+                    "phone": ["(21) 2714-8856"],
+                    "email": [],
+                    "type": "AMB",
+                    "address": {
+                        "street": "Avenida Quintino Bocaiúva",
+                        "houseNumber": "S/N",
+                        "district": "Charitas",
+                        "lat": -22.9177752,
+                        "long": -43.0954141 
+                    }
+                },
+                "region": [
+                    {
+                        "name": "Cachoeira"
+                    },
+                    {
+                        "name": "Charitas"
+                    },
+                    {
+                        "name": "Grota da Surucucu"
+                    },
+                    {
+                        "name": "Jurujuba"
+                    },
+                    {
+                        "name": "Morro do Cavalão"
+                    },
+                    {
+                        "name": "Preventório"
+                    },
+                    {
+                        "name": "São Francisco"
+                    }
+                ],
+                "coord":[
+                    {
+                        "name": "Thaiane",
+                        "type": "Geral",
+                        "email": [],
+                        "phone": ["(21) 98473-1463"]
+                    },
+                    {
+                        "name": "Vinícius Ramos",
+                        "type": "Técnica",
+                        "email": [],
+                        "phone": ["(21) 99636-2111"]
+                    }
+                ],
+                "reception": [
+                    {
+                        "weekDay": 3,
+                        "openingHour": "13:00",
+                        "closingHour": "17:00"
+                    },
+                    {
+                        "weekDay": 5,
+                        "openingHour": "9:00",
+                        "closingHour": "17:00"
+                    },
+                    {
+                        "weekDay": 6,
+                        "openingHour": "9:00",
+                        "closingHour": "17:00"
+                    }
+                ]
+            }
+        ]
+    }
+]
