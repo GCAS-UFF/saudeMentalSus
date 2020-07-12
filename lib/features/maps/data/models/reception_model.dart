@@ -17,4 +17,9 @@ class ReceptionModel extends Reception {
     );
   }
 
+  static List<ReceptionModel> listFromJson(List<dynamic> json) {
+    return json == null
+        ? List<ReceptionModel>()
+        : json.map((value) => ReceptionModel.fromJson(value)).toList();
+  }
 }
