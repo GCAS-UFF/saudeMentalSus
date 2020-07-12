@@ -3,14 +3,11 @@ import 'package:saudeMentalSus/features/maps/domain/entities/coord.dart';
 import 'package:meta/meta.dart';
 
 class CoordModel extends Coord {
-  CoordModel(
-      {@required name, @required phones, @required emails})
-      : super(
-            name: name,
-            phones: phones,
-            emails: emails);
+  CoordModel({@required name, @required phones, @required emails})
+      : super(name: name, phones: phones, emails: emails);
 
   factory CoordModel.fromJson(Map<String, dynamic> json) {
+    if (json == null) return null;
     return CoordModel(
       name: json['name'],
       phones: Converter.convertListDynamicToListString(json['phone']),
@@ -18,4 +15,9 @@ class CoordModel extends Coord {
     );
   }
 
+  static List<CoordModel> listFromJson(List<dynamic> json) {
+    return json == null
+        ? List<CoordModel>()
+        : json.map((value) => CoordModel.fromJson(value)).toList();
+  }
 }

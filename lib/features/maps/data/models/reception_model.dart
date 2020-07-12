@@ -10,6 +10,7 @@ class ReceptionModel extends Reception {
             closingHour: closingHour);
 
   factory ReceptionModel.fromJson(Map<String, dynamic> json) {
+    if (json == null) return null;
     return ReceptionModel(
       weekDay: json['weekDay'],
       openingHour: json['openingHour'],

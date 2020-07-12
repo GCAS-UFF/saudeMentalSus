@@ -19,13 +19,13 @@ class InstitutionModel extends Institution {
             address: address);
 
   factory InstitutionModel.fromJson(Map<String, dynamic> json) {
+    if (json == null) return null;
     return InstitutionModel(
-        name: json['name'],
-        phones: Converter.convertListDynamicToListString(json['phone']),
-        emails: Converter.convertListDynamicToListString(json['email']),
-        type: json['type'],
-        address: json['address'] != null
-            ? new AddressModel.fromJson(json['address'])
-            : null);
+      name: json['name'],
+      phones: Converter.convertListDynamicToListString(json['phone']),
+      emails: Converter.convertListDynamicToListString(json['email']),
+      type: json['type'],
+      address: AddressModel.fromJson(json['address']),
+    );
   }
 }

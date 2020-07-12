@@ -6,6 +6,7 @@ class RegionModel extends Region {
   RegionModel({@required name}) : super(name: name);
 
   factory RegionModel.fromJson(Map<String, dynamic> json) {
+    if (json == null) return null;
     return RegionModel(name: json['name']);
   }
 
