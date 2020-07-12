@@ -17,11 +17,4 @@ class ReceptionModel extends Reception {
     );
   }
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    if (weekDay != null) data['weekDay'] = this.weekDay;
-    if (weekDay != null) data['openingHour'] = this.openingHour;
-    if (weekDay != null) data['closingHour'] = this.closingHour;
-    return data;
-  }
 }

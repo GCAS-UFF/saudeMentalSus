@@ -21,14 +21,4 @@ class AddressModel extends Address {
       longitude: json['long']
     );
   }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    if (street != null) data['street'] = this.street;
-    if (district != null) data['district'] = this.district;
-    if (houseNumber != null) data['houseNumber'] = this.houseNumber;
-    if (latitude != null) data['lat'] = this.latitude;
-    if (longitude != null) data['long'] = this.longitude;
-    return data;
-  }
 }
