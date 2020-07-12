@@ -56,18 +56,18 @@
                 "reception": [
                     {
                         "weekDay": 3,
-                        "openingHour": 13,
-                        "closingHour": 17
+                        "openingHour": "13:00",
+                        "closingHour": "17:00"
                     },
                     {
                         "weekDay": 5,
-                        "openingHour": 9,
-                        "closingHour": 17
+                        "openingHour": "9:00",
+                        "closingHour": "17:00"
                     },
                     {
                         "weekDay": 6,
-                        "openingHour": 9,
-                        "closingHour": 17
+                        "openingHour": "9:00",
+                        "closingHour": "17:00"
                     }
                 ]
             }
