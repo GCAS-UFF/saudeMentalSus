@@ -1,6 +1,7 @@
 [
     {
         "name": "Niterói",
+        "federationUnity": "RJ",
         "servicesList": [
             {
                 "institution": {
@@ -10,7 +11,7 @@
                     "type": "AMB",
                     "address": {
                         "street": "Avenida Quintino Bocaiúva",
-                        "number": "S/N",
+                        "houseNumber": "S/N",
                         "district": "Charitas",
                         "lat": -22.9177752,
                         "long": -43.0954141 
