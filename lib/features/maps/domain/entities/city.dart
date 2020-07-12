@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:saudeMentalSus/features/maps/domain/entities/services.dart';
+import 'package:saudeMentalSus/features/maps/domain/entities/service.dart';
 import 'package:meta/meta.dart';
 
 class City extends Equatable {

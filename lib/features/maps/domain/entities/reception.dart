@@ -2,8 +2,8 @@ import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 
 class Reception extends Equatable {
-  final DateTime openingHour;
-  final DateTime closingHour;
+  final String openingHour;
+  final String closingHour;
   final int weekDay;
 
   Reception(
