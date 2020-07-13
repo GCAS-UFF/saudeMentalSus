@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
-import 'package:saudeMentalSus/features/maps/data/sources/maps_local_data_source.dart';
+import 'package:saudeMentalSus/features/maps/data/sources/maps_launcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -52,28 +51,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-  List<CityModel> list;
-  MapsLocalDataSourceImpl m = new MapsLocalDataSourceImpl();
-
-  @override
-  void initState() async {
-    // TODO: implement initState
-    list = await m.getCouponsListFromJson();
-    print(list[0].servicesList[0].institution.institutionType);
-    super.initState();
-  }
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
+  MapsLauncher m = new MapsLauncher();
 
   @override
   Widget build(BuildContext context) {
@@ -109,21 +87,14 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
+            FlatButton(
+              child: Text("Abrir no Maps"),
+              onPressed: () => m.openMapsSheet(
+                  context, "Ambulatório de Jurujuba", -22.9177752, -43.0954141),
+            )
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
