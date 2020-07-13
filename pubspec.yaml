@@ -42,6 +42,8 @@ dependencies:
   #Maps dependencies
   google_maps_flutter: ^0.5.21
   geolocator: ^5.1.5
+  # Launch Maps
+  map_launcher: ^0.7.1
 
 
 dev_dependencies:
