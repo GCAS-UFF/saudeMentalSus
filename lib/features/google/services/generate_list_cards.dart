@@ -1,24 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:saudeMentalSus/features/google/services/geolocator_service.dart';
 import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
 import 'package:saudeMentalSus/features/maps/data/sources/maps_launcher.dart';
 
 class GenerateListCards {
-  List<Widget> generate(BuildContext context, List<CityModel> cities,
-      GeoLocatorService geoLocatorService, Position currentPosition) {
+  final geoLocatorService = GeoLocatorService();
+  Future<List<Widget>> generate(
+      BuildContext context, List<CityModel> cities, LatLng currentPosition) async{
     List<Widget> cards = [];
     MapsLauncher m = new MapsLauncher();
-
-    cities.forEach((city) {
-      city.servicesList.forEach((service) async {
-        final distance = await geoLocatorService.getDistance(
-            currentPosition.latitude,
-            currentPosition.longitude,
-            service.institution.address.latitude,
-            service.institution.address.longitude);
-
-        final card = Card(
+    
+    for(var city in cities){
+      for(var service in city.servicesList){
+        final distance = ((currentPosition.latitude != 0) &&
+                (currentPosition.longitude != 0))
+            ? await geoLocatorService.getDistance(
+                currentPosition.latitude,
+                currentPosition.longitude,
+                service.institution.address.latitude,
+                service.institution.address.longitude)
+            : null;
+         final card = Card(
           child: ListTile(
             title: Text(service.institution.name),
             subtitle: Column(
@@ -28,8 +32,8 @@ class GenerateListCards {
                   height: 3.0,
                 ),
                 (distance != null)
-                    ? Text('\u00b7 ${(distance).round()} m')
-                    : Container()
+                    ? Text('Distância: ${(distance).round()} m')
+                    : Text('N/A')
               ],
             ),
             trailing: IconButton(
@@ -43,10 +47,9 @@ class GenerateListCards {
             ),
           ),
         );
-
         cards.add(card);
-      });
-    });
+      }
+    }
     return cards;
   }
 }
