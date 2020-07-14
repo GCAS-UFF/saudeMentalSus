@@ -7,4 +7,10 @@ class Converter {
     }
     return result;
   }
+
+  static String convertEnumToString(Object o) => o.toString().split('.').last;
+
+  static T convertStringToEnum<T>(String value, List<T> values) =>
+      values.firstWhere((element) => value == convertEnumToString(element),
+          orElse: () => null);
 }

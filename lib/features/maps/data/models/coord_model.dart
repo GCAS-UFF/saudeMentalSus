@@ -3,13 +3,16 @@ import 'package:saudeMentalSus/features/maps/domain/entities/coord.dart';
 import 'package:meta/meta.dart';
 
 class CoordModel extends Coord {
-  CoordModel({@required name, @required phones, @required emails})
-      : super(name: name, phones: phones, emails: emails);
+  CoordModel(
+      {@required name, @required type, @required phones, @required emails})
+      : super(name: name, coordType: type, phones: phones, emails: emails);
 
   factory CoordModel.fromJson(Map<String, dynamic> json) {
     if (json == null) return null;
     return CoordModel(
       name: json['name'],
+      type: Converter.convertStringToEnum<CoordType>(
+          json['type'], CoordType.values),
       phones: Converter.convertListDynamicToListString(json['phone']),
       emails: Converter.convertListDynamicToListString(json['email']),
     );

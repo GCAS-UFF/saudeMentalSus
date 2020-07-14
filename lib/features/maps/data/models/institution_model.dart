@@ -24,7 +24,8 @@ class InstitutionModel extends Institution {
       name: json['name'],
       phones: Converter.convertListDynamicToListString(json['phone']),
       emails: Converter.convertListDynamicToListString(json['email']),
-      type: json['type'],
+      type: Converter.convertStringToEnum<InstitutionType>(
+          json['type'], InstitutionType.values),
       address: AddressModel.fromJson(json['address']),
     );
   }

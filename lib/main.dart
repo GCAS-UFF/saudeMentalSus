@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
+import 'package:saudeMentalSus/features/maps/data/sources/maps_local_data_source.dart';
 
 void main() {
   runApp(MyApp());
@@ -51,6 +53,16 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  List<CityModel> list;
+  MapsLocalDataSourceImpl m = new MapsLocalDataSourceImpl();
+
+  @override
+  void initState() async {
+    // TODO: implement initState
+    list = await m.getCouponsListFromJson();
+    print(list[0].servicesList[0].institution.institutionType);
+    super.initState();
+  }
 
   void _incrementCounter() {
     setState(() {

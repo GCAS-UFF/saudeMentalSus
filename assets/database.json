@@ -43,13 +43,13 @@
                 "coord":[
                     {
                         "name": "Thaiane",
-                        "type": "Geral",
+                        "type": "GERAL",
                         "email": [],
                         "phone": ["(21) 98473-1463"]
                     },
                     {
                         "name": "Vinícius Ramos",
-                        "type": "Técnica",
+                        "type": "TECNICA",
                         "email": [],
                         "phone": ["(21) 99636-2111"]
                     }
