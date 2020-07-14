@@ -4,6 +4,7 @@ import 'package:saudeMentalSus/core/error/failure.dart';
 import 'package:saudeMentalSus/core/usecases/usecase.dart';
 import 'package:saudeMentalSus/features/maps/domain/entities/city.dart';
 import 'package:meta/meta.dart';
+import 'package:saudeMentalSus/features/maps/domain/entities/geolocation_point.dart';
 import 'package:saudeMentalSus/features/maps/domain/repositories/maps_repository.dart';
 
 class GetCityServices extends UseCase<City, Params> {
@@ -13,17 +14,15 @@ class GetCityServices extends UseCase<City, Params> {
 
   @override
   Future<Either<Failure, City>> call(Params params) async {
-    return await mapsRepository.getCityServices(
-        params.latitude, params.longitude);
+    return await mapsRepository.getCityServices(params.city);
   }
 }
 
 class Params extends Equatable {
-  final double latitude;
-  final double longitude;
+  final String city;
 
-  Params({@required this.latitude, @required this.longitude});
+  Params({@required this.city});
 
   @override
-  List<Object> get props => [latitude, longitude];
+  List<Object> get props => [city];
 }
