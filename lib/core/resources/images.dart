@@ -1,0 +1,84 @@
+class Images {
+  static const String alcoholic_liquid = "assets/images/alcoholic.png";
+  static const String coffe_liquid = "assets/images/coffee.png";
+  static const String droplets_1 = "assets/images/droplets_1.png";
+  static const String droplets_2 = "assets/images/droplets_2.png";
+  static const String droplets_3 = "assets/images/droplets_3.png";
+  static const String droplets_4 = "assets/images/droplets_4.png";
+  static const String droplets_5 = "assets/images/droplets_5.png";
+  static const String droplets_6 = "assets/images/droplets_6.png";
+  static const String droplets_7 = "assets/images/droplets_7.png";
+  static const String droplets_8 = "assets/images/droplets_8.png";
+  static const String droplets_9 = "assets/images/droplets_9.png";
+  static const String droplets_10 = "assets/images/droplets_10.png";
+  static const String droplets_11 = "assets/images/droplets_11.png";
+  static const String droplets_12 = "assets/images/droplets_12.png";
+  static const String droplets_13 = "assets/images/droplets_13.png";
+  static const String droplets_14 = "assets/images/droplets_14.png";
+  static const String droplets_15 = "assets/images/droplets_15.png";
+  static const String droplets_16 = "assets/images/droplets_16.png";
+  static const String droplets_17 = "assets/images/droplets_17.png";
+  static const String droplets_blue = "assets/images/droplets_blue.png";
+  static const String droplets_done = "assets/images/droplets_done.png";
+  static const String ico_blue_plus = "assets/images/ico_blue_plus.png";
+  static const String ico_happy = "assets/images/ico_happy.png";
+  static const String ico_sad = "assets/images/ico_sad.png";
+  static const String ico_so_so = "assets/images/ico_so_so.png";
+  static const String ico_watter_glass = "assets/images/ico_watter_glass.png";
+  static const String ico_watter_glass_pluss =
+      "assets/images/ico_watter_glass_pluss.png";
+  static const String ico_email = "assets/images/ico_email.png";
+  static const String ico_facebook = "assets/images/ico_facebook.png";
+  static const String ico_google = "assets/images/ico_google.png";
+  static const String ico_yellow_plus = "assets/images/ico_yellow_plus.png";
+  static const String img_cellphone = "assets/images/img_cellphone.png";
+  static const String img_medication = "assets/images/img_medication.png";
+  static const String image_background = "assets/images/image_background.png";
+  static const String image_menu_home = "assets/images/image_menu_home.png";
+  static const String juice_liquid = "assets/images/juice.png";
+  static const String news_image = "assets/images/news_image.jpg";
+  static const String logo = "assets/images/logo.png";
+  static const String logo_name = "assets/images/logo_name.png";
+  static const String logo_colored = "assets/images/logo_colored.png";
+  static const String logo_colored_bottomless =
+      "assets/images/logo_colored_bottomless.png";
+  static const String liquid_blue = "assets/images/liquid_blue.png";
+  static const String liquid_done = "assets/images/liquid_done.png";
+  static const String img_doctor = "assets/images/img_doctor.png";
+  static const String doctor_icon1 = "assets/images/doctor_icon1.png";
+  static const String doctor_icon2 = "assets/images/doctor_icon2.png";
+  static const String full_logo = "assets/images/full_logo.png";
+  static const String all_droplets = "assets/images/droplets_all.png";
+  static const String ico_hamburg = "assets/images/ico_hamburg.png";
+  static const String ico_alert = "assets/images/ico_alert.png";
+  static const String ico_data = "assets/images/ico_data.png";
+  static const String ico_integrations = "assets/images/ico_integrations.png";
+  static const String ico_preferences = "assets/images/ico_preferences.png";
+  static const String side_menu_bg_top = "assets/images/side_menu_bg_top.png";
+  static const String side_menu_bg_bottom =
+      "assets/images/side_menu_bg_bottom.png";
+  static const String personal_data_bg = "assets/images/personal_data_bg.png";
+  static const String other_liquid = "assets/images/other.png";
+  static const String pee_date_droplets = "assets/images/droplets_pee_date.png";
+  static const String liquid_date_droplets =
+      "assets/images/droplets_liquid_date.png";
+  static const String pee_volume_header = "assets/images/droplets_volume.png";
+  static const String image_graphic = "assets/images/image_graphic.png";
+  static const String tea_liquid = "assets/images/tea.png";
+  static const String which_liquid_header =
+      "assets/images/which_liquid_header.png";
+  static const String integration_icon = "assets/images/integrations-icon.png";
+  static const String doctor_icon = "assets/images/doctor-icon.png";
+  static const String medicine_icon = "assets/images/medicine-icon.png";
+  static const String newspaper_icon = "assets/images/newspaper-icon.png";
+  static const String reports_icon = "assets/images/reports-icon.png";
+  static const String score_icon = "assets/images/score-icon.png";
+  static const String logout_icon = "assets/images/logout-icon.png";
+  static const String report_icon_bg = "assets/images/report_icon.png";
+  static const String filter_icon = "assets/images/filter_icon.png";
+  static const String calendar_icon = "assets/images/calendar_icon.png";
+  static const String graphic_report_visual = "assets/images/graphic.png";
+  static const String empty_report_image = "assets/images/empty_report.png";
+  static const String map_marker = "assets/images/destination_map_marker.png";
+  static const String farmacia = "assets/images/farmacia.png";
+}
