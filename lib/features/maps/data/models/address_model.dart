@@ -1,3 +1,4 @@
+import 'package:saudeMentalSus/features/maps/data/models/geolocation_point_model.dart';
 import 'package:saudeMentalSus/features/maps/domain/entities/address.dart';
 import 'package:meta/meta.dart';
 
@@ -6,14 +7,12 @@ class AddressModel extends Address {
       {@required street,
       @required district,
       @required houseNumber,
-      @required latitude,
-      @required longitude})
+      @required geolocationPoint})
       : super(
             street: street,
             district: district,
             houseNumber: houseNumber,
-            latitude: latitude,
-            longitude: longitude);
+            geolocationPoint: geolocationPoint);
 
   factory AddressModel.fromJson(Map<String, dynamic> json) {
     if (json == null) return null;
@@ -21,7 +20,6 @@ class AddressModel extends Address {
         street: json['street'],
         district: json['district'],
         houseNumber: json['houseNumber'],
-        latitude: json['lat'],
-        longitude: json['long']);
+        geolocationPoint: GeolocationPointModel.fromJson(json));
   }
 }
