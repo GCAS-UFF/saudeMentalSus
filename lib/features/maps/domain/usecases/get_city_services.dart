@@ -14,15 +14,15 @@ class GetCityServices extends UseCase<City, Params> {
 
   @override
   Future<Either<Failure, City>> call(Params params) async {
-    return await mapsRepository.getCityServices(params.geolocationPoint);
+    return await mapsRepository.getCityServices(params.city);
   }
 }
 
 class Params extends Equatable {
-  final GeolocationPoint geolocationPoint;
+  final String city;
 
-  Params({@required this.geolocationPoint});
+  Params({@required this.city});
 
   @override
-  List<Object> get props => [geolocationPoint];
+  List<Object> get props => [city];
 }
