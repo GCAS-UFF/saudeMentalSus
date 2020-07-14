@@ -25,29 +25,29 @@ class Search extends StatelessWidget {
                   var markers = (cities != null)
                       ? markerService.getMarkers(cities)
                       : List<Marker>();
-                  Set<Circle> circles = (currentPosition != null)
-                      ? Set.from([
-                          Circle(
-                            circleId: CircleId("Current"),
-                            center: LatLng(currentPosition.latitude,
-                                currentPosition.longitude),
-                          )
-                        ])
-                      : null;
                   return (cities != null)
                       ? Container(
                           height: MediaQuery.of(context).size.height,
                           width: MediaQuery.of(context).size.width,
                           child: GoogleMap(
-                            myLocationEnabled: true,
+                            myLocationEnabled:
+                                ((currentPosition.latitude == 0) &&
+                                        (currentPosition.longitude == 0))
+                                    ? false
+                                    : true,
                             myLocationButtonEnabled: true,
                             initialCameraPosition: CameraPosition(
-                                target: LatLng(currentPosition.latitude,
-                                    currentPosition.longitude),
-                                zoom: 16.0),
+                                target: ((currentPosition.latitude == 0) &&
+                                        (currentPosition.longitude == 0))
+                                    ? LatLng(-15.7801, -47.9292)
+                                    : LatLng(currentPosition.latitude,
+                                        currentPosition.longitude),
+                                zoom: ((currentPosition.latitude == 0) &&
+                                        (currentPosition.longitude == 0))
+                                    ? 0
+                                    : 16.0),
                             zoomGesturesEnabled: true,
                             markers: Set<Marker>.of(markers),
-                            circles: circles,
                           ))
                       : Center(child: CircularProgressIndicator());
                 },
