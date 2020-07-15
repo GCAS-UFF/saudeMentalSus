@@ -5,6 +5,7 @@ import 'package:saudeMentalSus/core/platform/network_info.dart';
 import 'package:saudeMentalSus/features/maps/data/datasources/maps_local_data_source.dart';
 import 'package:saudeMentalSus/features/maps/domain/repositories/maps_repository.dart';
 import 'package:saudeMentalSus/features/maps/domain/usecases/get_city_services.dart';
+import 'package:saudeMentalSus/features/maps/presentation/bloc/maps_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'features/maps/data/repositories/maps_repository_impl.dart';
@@ -26,6 +27,13 @@ Future<void> init() async {
 }
 
 _initMaps() {
+  // Bloc
+  sl.registerFactory(
+    () => MapsBloc(
+      getCityServices: sl(),
+    ),
+  );
+
   // Use cases
   sl.registerLazySingleton(() => GetCityServices(sl()));
 

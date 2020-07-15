@@ -13,8 +13,9 @@ class MarkerService {
             // icon: place.icon,
             infoWindow: InfoWindow(
                 title: service.institution.name), //snippet: place.vicinity),
-            position: LatLng(service.institution.address.latitude,
-                service.institution.address.longitude));
+            position: LatLng(
+                service.institution.address.geolocationPoint.latitude,
+                service.institution.address.geolocationPoint.longitude));
 
         markers.add(marker);
       });
