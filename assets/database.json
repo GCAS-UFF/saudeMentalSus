@@ -71,6 +71,75 @@
                         "closingHour": "17:00"
                     }
                 ]
+            },
+            {
+                "institution": {
+                    "name": "Antonie Piter",
+                    "phone": ["(21) 2714-8856"],
+                    "email": [],
+                    "type": "AMB",
+                    "address": {
+                        "street": "Avenida Quintino Bocaiúva",
+                        "houseNumber": "S/N",
+                        "district": "Charitas",
+                        "lat": -22.8992365,
+                        "long": -43.1131186 
+                    }
+                },
+                "region": [
+                    {
+                        "name": "Cachoeira"
+                    },
+                    {
+                        "name": "Charitas"
+                    },
+                    {
+                        "name": "Grota da Surucucu"
+                    },
+                    {
+                        "name": "Jurujuba"
+                    },
+                    {
+                        "name": "Morro do Cavalão"
+                    },
+                    {
+                        "name": "Preventório"
+                    },
+                    {
+                        "name": "São Francisco"
+                    }
+                ],
+                "coord":[
+                    {
+                        "name": "Thaiane",
+                        "type": "GERAL",
+                        "email": [],
+                        "phone": ["(21) 98473-1463"]
+                    },
+                    {
+                        "name": "Vinícius Ramos",
+                        "type": "TECNICA",
+                        "email": [],
+                        "phone": ["(21) 99636-2111"]
+                    }
+                ],
+                "reception": [
+                    {
+                        "weekDay": 3,
+                        "openingHour": "13:00",
+                        "closingHour": "17:00"
+                    },
+                    {
+                        "weekDay": 5,
+                        "openingHour": "9:00",
+                        "closingHour": "17:00"
+                    },
+                    {
+                        "weekDay": 6,
+                        "openingHour": "9:00",
+                        "closingHour": "17:00"
+                    }
+                ]
             }
         ]
     }
