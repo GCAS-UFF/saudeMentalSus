@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:saudeMentalSus/features/google/services/geolocator_service.dart';
 import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
@@ -7,13 +6,13 @@ import 'package:saudeMentalSus/features/maps/data/sources/maps_launcher.dart';
 
 class GenerateListCards {
   final geoLocatorService = GeoLocatorService();
-  Future<List<Widget>> generate(
-      BuildContext context, List<CityModel> cities, LatLng currentPosition) async{
+  Future<List<Widget>> generate(BuildContext context, List<CityModel> cities,
+      LatLng currentPosition) async {
     List<Widget> cards = [];
     MapsLauncher m = new MapsLauncher();
-    
-    for(var city in cities){
-      for(var service in city.servicesList){
+
+    for (var city in cities) {
+      for (var service in city.servicesList) {
         final distance = ((currentPosition.latitude != 0) &&
                 (currentPosition.longitude != 0))
             ? await geoLocatorService.getDistance(
@@ -22,7 +21,7 @@ class GenerateListCards {
                 service.institution.address.latitude,
                 service.institution.address.longitude)
             : null;
-         final card = Card(
+        final card = Card(
           child: ListTile(
             title: Text(service.institution.name),
             subtitle: Column(
