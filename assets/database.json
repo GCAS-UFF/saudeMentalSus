@@ -6,8 +6,8 @@
             {
                 "institution": {
                     "name": "Ambulatório de Jurujuba",
-                    "phone": ["(21) 2714-8856"],
-                    "email": [],
+                    "phone": ["(21) 2714-8856","(21) 2714-8856"],
+                    "email": ["ricardotavares51@hotmail.com","ricardotavares51@hotmail.com"],
                     "type": "AMB",
                     "address": {
                         "street": "Avenida Quintino Bocaiúva",

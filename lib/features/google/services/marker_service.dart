@@ -22,14 +22,13 @@ class MarkerService {
         Marker marker = Marker(
           markerId: MarkerId(service.institution.name),
           draggable: false,
+          consumeTapEvents: true,
           // icon: place.icon,
-          infoWindow: InfoWindow(
-              title: service.institution.name), //snippet: place.vicinity),
+          infoWindow: InfoWindow(title: service.institution.name),
           position: LatLng(service.institution.address.latitude,
               service.institution.address.longitude),
           onTap: () => _showCard(context, service),
         );
-
         markers.add(marker);
       });
     });
@@ -51,58 +50,129 @@ class MarkerService {
         backgroundColor: Colors.transparent,
         context: context,
         builder: (context) {
-          return Container(
-              color: Colors.white,
-              height: (MediaQuery.of(context).size.height * 0.35),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  ListTile(
-                    title: Text(service.institution.name),
-                    subtitle: Text(
-                        '${getValueFromEnum(service.institution.institutionType)} • ${(distance != null) ? (distance).round().toString() + 'm' : 'N/A'}'),
-              
-                    trailing: IconButton(
-                      icon: Icon(Icons.directions),
-                      color: Theme.of(context).primaryColor,
-                      onPressed: () => m.openMapsSheet(
-                          context,
-                          service.institution.name,
-                          service.institution.address.latitude,
-                          service.institution.address.longitude),
-                    ),
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.location_on),
-                    title: Text(service.institution.address.toString()),
-                  ),
-                  Visibility(
-                    visible: (service.institution.emails.length != 0),
-                    child: Expanded(
-                      child: ListView.builder(
-                          itemCount: service.institution.emails.length,
-                          itemBuilder: (context, index) => ListTile(
-                                leading: (index == 0)
-                                    ? Icon(Icons.alternate_email)
-                                    : null,
-                                title: Text(service.institution.emails[index]),
-                              )),
-                    ),
-                  ),
-                  Visibility(
-                    visible: (service.institution.phones.length != 0),
-                    child: Expanded(
-                      child: ListView.builder(
-                          itemCount: service.institution.phones.length,
-                          itemBuilder: (context, index) => ListTile(
-                                leading:
-                                    (index == 0) ? Icon(Icons.phone) : null,
-                                title: Text(service.institution.phones[index]),
-                              )),
-                    ),
-                  ),
-                ],
-              ));
+          return DraggableScrollableSheet(
+            maxChildSize: 1,
+            minChildSize: 0.3,
+            builder: (BuildContext context, ScrollController scrollController) {
+              return SingleChildScrollView(
+                controller: scrollController,
+                child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(15),
+                          topRight: Radius.circular(15),
+                        )),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        ListTile(
+                          title: Text(service.institution.name),
+                          subtitle: Text(
+                              '${getValueFromEnum(service.institution.institutionType)} • ${(distance != null) ? (distance).round().toString() + 'm' : 'N/A'}'),
+                          trailing: IconButton(
+                            icon: Icon(Icons.directions),
+                            color: Theme.of(context).primaryColor,
+                            onPressed: () => m.openMapsSheet(
+                                context,
+                                service.institution.name,
+                                service.institution.address.latitude,
+                                service.institution.address.longitude),
+                          ),
+                        ),
+                        ListTile(
+                          leading: Icon(Icons.location_on),
+                          title: Text(service.institution.address.toString()),
+                        ),
+                        Visibility(
+                          visible: (service.institution.phones.length != 0),
+                          child: ListView.builder(
+                              shrinkWrap: true,
+                              primary: false,
+                              itemCount: service.institution.phones.length,
+                              itemBuilder: (context, index) => ListTile(
+                                    leading:
+                                        (index == 0) ? Icon(Icons.phone) : null,
+                                    title:
+                                        Text(service.institution.phones[index]),
+                                  )),
+                        ),
+                        Visibility(
+                          visible: (service.institution.emails.length != 0),
+                          child: ListView.builder(
+                              shrinkWrap: true,
+                              primary: false,
+                              itemCount: service.institution.emails.length,
+                              itemBuilder: (context, index) => ListTile(
+                                    leading: (index == 0)
+                                        ? Icon(Icons.alternate_email)
+                                        : null,
+                                    title:
+                                        Text(service.institution.emails[index]),
+                                  )),
+                        ),
+                        Text('Coordenadores'),
+                        (service.coords.length != 0)
+                            ? ListView.builder(
+                                shrinkWrap: true,
+                                primary: false,
+                                itemCount: service.coords.length,
+                                itemBuilder: (context, index) {
+                                  return Container(
+                                    child: Column(
+                                      children: [
+                                        Text(service.coords[index].name),
+                                        Text(getValueFromEnum(
+                                            service.coords[index].coordType)),
+                                        Visibility(
+                                          visible: (service.coords[index].phones
+                                                  .length !=
+                                              0),
+                                          child: ListView.builder(
+                                              shrinkWrap: true,
+                                              primary: false,
+                                              itemCount: service
+                                                  .coords[index].phones.length,
+                                              itemBuilder: (context, index) =>
+                                                  ListTile(
+                                                    leading: (index == 0)
+                                                        ? Icon(Icons.phone)
+                                                        : null,
+                                                    title: Text(service
+                                                        .coords[index]
+                                                        .phones[index]),
+                                                  )),
+                                        ),
+                                        Visibility(
+                                          visible: (service.coords[index].emails
+                                                  .length !=
+                                              0),
+                                          child: ListView.builder(
+                                              shrinkWrap: true,
+                                              primary: false,
+                                              itemCount: service
+                                                  .coords[index].emails.length,
+                                              itemBuilder: (context, index) =>
+                                                  ListTile(
+                                                    leading: (index == 0)
+                                                        ? Icon(Icons
+                                                            .alternate_email)
+                                                        : null,
+                                                    title: Text(service
+                                                        .coords[index]
+                                                        .emails[index]),
+                                                  )),
+                                        ),
+                                      ],
+                                    ),
+                                  );
+                                })
+                            : Text('Não existem coordenadores')
+                      ],
+                    )),
+              );
+            },
+          );
         });
   }
 }
