@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:saudeMentalSus/core/util/getValueFromEnum.dart';
+import 'package:saudeMentalSus/features/google/services/generate_list_tile.dart';
 import 'package:saudeMentalSus/features/google/services/geolocator_service.dart';
 import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
 import 'package:saudeMentalSus/features/maps/data/sources/maps_launcher.dart';
@@ -37,6 +38,7 @@ class MarkerService {
   }
 
   _showCard(BuildContext context, Service service) async {
+    final lineFreeSpace = MediaQuery.of(context).size.width * 0.25;
     final distance = ((latitude != 0) && (longitude != 0))
         ? await geoLocatorService.getDistance(
             latitude,
@@ -69,7 +71,7 @@ class MarkerService {
                         ListTile(
                           title: Text(service.institution.name),
                           subtitle: Text(
-                              '${getValueFromEnum(service.institution.institutionType)} • ${(distance != null) ? (distance).round().toString() + 'm' : 'N/A'}'),
+                              '${GetInfo.getValueFromEnum(service.institution.institutionType)} • ${(distance != null) ? (distance).round().toString() + 'm' : 'N/A'}'),
                           trailing: IconButton(
                             icon: Icon(Icons.directions),
                             color: Theme.of(context).primaryColor,
@@ -84,85 +86,40 @@ class MarkerService {
                           leading: Icon(Icons.location_on),
                           title: Text(service.institution.address.toString()),
                         ),
-                        Visibility(
-                          visible: (service.institution.phones.length != 0),
-                          child: ListView.builder(
-                              shrinkWrap: true,
-                              primary: false,
-                              itemCount: service.institution.phones.length,
-                              itemBuilder: (context, index) => ListTile(
-                                    leading:
-                                        (index == 0) ? Icon(Icons.phone) : null,
-                                    title:
-                                        Text(service.institution.phones[index]),
-                                  )),
-                        ),
-                        Visibility(
-                          visible: (service.institution.emails.length != 0),
-                          child: ListView.builder(
-                              shrinkWrap: true,
-                              primary: false,
-                              itemCount: service.institution.emails.length,
-                              itemBuilder: (context, index) => ListTile(
-                                    leading: (index == 0)
-                                        ? Icon(Icons.alternate_email)
-                                        : null,
-                                    title:
-                                        Text(service.institution.emails[index]),
-                                  )),
-                        ),
-                        Text('Coordenadores'),
+                        GenerateListTile.generateListTile(
+                            service.institution.phones, Icon(Icons.phone)),
+                        GenerateListTile.generateListTile(
+                            service.institution.emails,
+                            Icon(Icons.alternate_email)),
+                        SizedBox(height: 10),
+                        Text('Coordenadores', style: TextStyle(fontSize: 20)),
                         (service.coords.length != 0)
-                            ? ListView.builder(
+                            ? ListView.separated(
                                 shrinkWrap: true,
                                 primary: false,
                                 itemCount: service.coords.length,
+                                separatorBuilder: (context, index) => Divider(
+                                    indent: lineFreeSpace,
+                                    endIndent: lineFreeSpace,
+                                    color: Colors.grey),
                                 itemBuilder: (context, index) {
                                   return Container(
                                     child: Column(
                                       children: [
-                                        Text(service.coords[index].name),
-                                        Text(getValueFromEnum(
-                                            service.coords[index].coordType)),
-                                        Visibility(
-                                          visible: (service.coords[index].phones
-                                                  .length !=
-                                              0),
-                                          child: ListView.builder(
-                                              shrinkWrap: true,
-                                              primary: false,
-                                              itemCount: service
-                                                  .coords[index].phones.length,
-                                              itemBuilder: (context, index) =>
-                                                  ListTile(
-                                                    leading: (index == 0)
-                                                        ? Icon(Icons.phone)
-                                                        : null,
-                                                    title: Text(service
-                                                        .coords[index]
-                                                        .phones[index]),
-                                                  )),
+                                        ListTile(
+                                          leading: Icon(Icons.person),
+                                          title:
+                                              Text(service.coords[index].name),
+                                          subtitle: Text(
+                                              GetInfo.getValueFromEnum(service
+                                                  .coords[index].coordType)),
                                         ),
-                                        Visibility(
-                                          visible: (service.coords[index].emails
-                                                  .length !=
-                                              0),
-                                          child: ListView.builder(
-                                              shrinkWrap: true,
-                                              primary: false,
-                                              itemCount: service
-                                                  .coords[index].emails.length,
-                                              itemBuilder: (context, index) =>
-                                                  ListTile(
-                                                    leading: (index == 0)
-                                                        ? Icon(Icons
-                                                            .alternate_email)
-                                                        : null,
-                                                    title: Text(service
-                                                        .coords[index]
-                                                        .emails[index]),
-                                                  )),
-                                        ),
+                                        GenerateListTile.generateListTile(
+                                            service.coords[index].phones,
+                                            Icon(Icons.phone)),
+                                        GenerateListTile.generateListTile(
+                                            service.coords[index].emails,
+                                            Icon(Icons.alternate_email)),
                                       ],
                                     ),
                                   );
