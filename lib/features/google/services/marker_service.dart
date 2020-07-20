@@ -87,10 +87,9 @@ class MarkerService {
                           title: Text(service.institution.address.toString()),
                         ),
                         GenerateListTile.generateListTile(
-                            service.institution.phones, Icon(Icons.phone)),
+                            service.institution.phones, Icons.phone),
                         GenerateListTile.generateListTile(
-                            service.institution.emails,
-                            Icon(Icons.alternate_email)),
+                            service.institution.emails, Icons.alternate_email),
                         SizedBox(height: 10),
                         Text('Coordenadores', style: TextStyle(fontSize: 20)),
                         (service.coords.length != 0)
@@ -116,10 +115,10 @@ class MarkerService {
                                         ),
                                         GenerateListTile.generateListTile(
                                             service.coords[index].phones,
-                                            Icon(Icons.phone)),
+                                            Icons.phone),
                                         GenerateListTile.generateListTile(
                                             service.coords[index].emails,
-                                            Icon(Icons.alternate_email)),
+                                            Icons.alternate_email),
                                       ],
                                     ),
                                   );
