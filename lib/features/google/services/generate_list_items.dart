@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:saudeMentalSus/features/google/services/callAndMessageService.dart';
+import 'package:saudeMentalSus/features/maps/domain/entities/reception.dart';
 
-class GenerateListTile {
+class GenerateListItems {
   static Visibility generateListTile(List<String> list, IconData icon) =>
       Visibility(
           visible: (list.length != 0),
@@ -27,4 +28,14 @@ class GenerateListTile {
                       }
                     },
                   )));
+
+  static ListTile generateOpeningHours(List<Reception> list) => ListTile(
+      leading: Icon(
+        Icons.access_time,
+        color: Colors.blue[400],
+      ),
+      title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: List.generate(
+              list.length, (index) => Text(list[index].toString()))));
 }
