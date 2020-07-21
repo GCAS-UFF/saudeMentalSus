@@ -18,21 +18,28 @@ class MarkerService {
 
   List<Marker> getMarkers(BuildContext context, List<CityModel> cities) {
     var markers = List<Marker>();
-    cities.forEach((city) {
-      city.servicesList.forEach((service) {
-        Marker marker = Marker(
-          markerId: MarkerId(service.institution.name),
-          draggable: false,
-          consumeTapEvents: true,
-          // icon: place.icon,
-          infoWindow: InfoWindow(title: service.institution.name),
-          position: LatLng(service.institution.address.latitude,
-              service.institution.address.longitude),
-          onTap: () => _showCard(context, service),
+    cities.forEach(
+      (city) {
+        city.servicesList.forEach(
+          (service) {
+            Marker marker = Marker(
+              markerId: MarkerId(service.institution.name),
+              draggable: false,
+              consumeTapEvents: true,
+              icon: (false)
+                  ? BitmapDescriptor.defaultMarkerWithHue(
+                      BitmapDescriptor.hueBlue)
+                  : BitmapDescriptor.defaultMarker,
+              infoWindow: InfoWindow(title: service.institution.name),
+              position: LatLng(service.institution.address.latitude,
+                  service.institution.address.longitude),
+              onTap: () => _showCard(context, service),
+            );
+            markers.add(marker);
+          },
         );
-        markers.add(marker);
-      });
-    });
+      },
+    );
 
     return markers;
   }
@@ -47,90 +54,91 @@ class MarkerService {
             service.institution.address.longitude)
         : null;
     showModalBottomSheet(
-        elevation: 0,
-        barrierColor: Colors.black.withAlpha(1),
-        backgroundColor: Colors.transparent,
-        context: context,
-        builder: (context) {
-          return DraggableScrollableSheet(
-            maxChildSize: 1,
-            minChildSize: 0.3,
-            builder: (BuildContext context, ScrollController scrollController) {
-              return SingleChildScrollView(
-                controller: scrollController,
-                child: Container(
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(15),
-                          topRight: Radius.circular(15),
-                        )),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        ListTile(
-                          title: Text(service.institution.name),
-                          subtitle: Text(
-                              '${GetInfo.getValueFromEnum(service.institution.institutionType)} • ${(distance != null) ? (distance).round().toString() + 'm' : 'N/A'}'),
-                          trailing: IconButton(
-                            icon: Icon(Icons.directions),
-                            color: Theme.of(context).primaryColor,
-                            onPressed: () => m.openMapsSheet(
-                                context,
-                                service.institution.name,
-                                service.institution.address.latitude,
-                                service.institution.address.longitude),
-                          ),
-                        ),
-                        ListTile(
-                          leading: Icon(Icons.location_on),
-                          title: Text(service.institution.address.toString()),
-                        ),
-                        GenerateListItems.generateListTile(
-                            service.institution.phones, Icons.phone),
-                        GenerateListItems.generateListTile(
-                            service.institution.emails, Icons.alternate_email),
-                        GenerateListItems.generateOpeningHours(
-                            service.receptions),
-                        SizedBox(height: 10),
-                        Text('Coordenadores', style: TextStyle(fontSize: 20)),
-                        (service.coords.length != 0)
-                            ? ListView.separated(
-                                shrinkWrap: true,
-                                primary: false,
-                                itemCount: service.coords.length,
-                                separatorBuilder: (context, index) => Divider(
-                                    indent: lineFreeSpace,
-                                    endIndent: lineFreeSpace,
-                                    color: Colors.grey),
-                                itemBuilder: (context, index) {
-                                  return Container(
-                                    child: Column(
-                                      children: [
-                                        ListTile(
-                                          leading: Icon(Icons.person),
-                                          title:
-                                              Text(service.coords[index].name),
-                                          subtitle: Text(
-                                              GetInfo.getValueFromEnum(service
-                                                  .coords[index].coordType)),
-                                        ),
-                                        GenerateListItems.generateListTile(
-                                            service.coords[index].phones,
-                                            Icons.phone),
-                                        GenerateListItems.generateListTile(
-                                            service.coords[index].emails,
-                                            Icons.alternate_email),
-                                      ],
+      elevation: 0,
+      barrierColor: Colors.black.withAlpha(1),
+      backgroundColor: Colors.transparent,
+      context: context,
+      builder: (context) {
+        return DraggableScrollableSheet(
+          maxChildSize: 1,
+          minChildSize: 0.3,
+          builder: (BuildContext context, ScrollController scrollController) {
+            return SingleChildScrollView(
+              controller: scrollController,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(15),
+                    topRight: Radius.circular(15),
+                  ),
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    ListTile(
+                      title: Text(service.institution.name),
+                      subtitle: Text(
+                          '${GetInfo.getValueFromEnum(service.institution.institutionType)} • ${(distance != null) ? (distance).round().toString() + 'm' : 'N/A'}'),
+                      trailing: IconButton(
+                        icon: Icon(Icons.directions),
+                        color: Theme.of(context).primaryColor,
+                        onPressed: () => m.openMapsSheet(
+                            context,
+                            service.institution.name,
+                            service.institution.address.latitude,
+                            service.institution.address.longitude),
+                      ),
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.location_on),
+                      title: Text(service.institution.address.toString()),
+                    ),
+                    GenerateListItems.generateListTile(
+                        service.institution.phones, Icons.phone),
+                    GenerateListItems.generateListTile(
+                        service.institution.emails, Icons.alternate_email),
+                    GenerateListItems.generateOpeningHours(service.receptions),
+                    SizedBox(height: 10),
+                    Text('Coordenadores', style: TextStyle(fontSize: 20)),
+                    (service.coords.length != 0)
+                        ? ListView.separated(
+                            shrinkWrap: true,
+                            primary: false,
+                            itemCount: service.coords.length,
+                            separatorBuilder: (context, index) => Divider(
+                                indent: lineFreeSpace,
+                                endIndent: lineFreeSpace,
+                                color: Colors.grey),
+                            itemBuilder: (context, index) {
+                              return Container(
+                                child: Column(
+                                  children: [
+                                    ListTile(
+                                      leading: Icon(Icons.person),
+                                      title: Text(service.coords[index].name),
+                                      subtitle: Text(GetInfo.getValueFromEnum(
+                                          service.coords[index].coordType)),
                                     ),
-                                  );
-                                })
-                            : Text('Não existem coordenadores')
-                      ],
-                    )),
-              );
-            },
-          );
-        });
+                                    GenerateListItems.generateListTile(
+                                        service.coords[index].phones,
+                                        Icons.phone),
+                                    GenerateListItems.generateListTile(
+                                        service.coords[index].emails,
+                                        Icons.alternate_email),
+                                  ],
+                                ),
+                              );
+                            },
+                          )
+                        : Text('Não existem coordenadores')
+                  ],
+                ),
+              ),
+            );
+          },
+        );
+      },
+    );
   }
 }
