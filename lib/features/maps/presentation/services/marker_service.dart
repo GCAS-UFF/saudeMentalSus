@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:saudeMentalSus/core/util/getInfo.dart';
-import 'package:saudeMentalSus/features/google/services/generate_list_items.dart';
-import 'package:saudeMentalSus/features/google/services/geolocator_service.dart';
+import 'package:saudeMentalSus/features/maps/presentation/services/generate_list_items.dart';
+import 'package:saudeMentalSus/features/maps/presentation/services/geolocator_service.dart';
 import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
 import 'package:saudeMentalSus/features/maps/data/sources/maps_launcher.dart';
 import 'package:saudeMentalSus/features/maps/domain/entities/service.dart';

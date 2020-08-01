@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:saudeMentalSus/features/google/services/callAndMessageService.dart';
+import 'package:saudeMentalSus/features/maps/presentation/services/callAndMessageService.dart';
 import 'package:saudeMentalSus/features/maps/domain/entities/reception.dart';
 
 class GenerateListItems {

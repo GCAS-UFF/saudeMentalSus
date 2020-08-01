@@ -3,8 +3,8 @@ import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:saudeMentalSus/core/resources/images.dart';
-import 'package:saudeMentalSus/features/google/screens/search.dart';
-import 'package:saudeMentalSus/features/google/services/geolocator_service.dart';
+import 'package:saudeMentalSus/features/maps/presentation/screens/search.dart';
+import 'package:saudeMentalSus/features/maps/presentation/services/geolocator_service.dart';
 import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
 import 'package:saudeMentalSus/features/maps/data/sources/maps_local_data_source.dart';
 

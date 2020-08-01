@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:saudeMentalSus/features/google/screens/tabs/show_map.dart';
-import 'package:saudeMentalSus/features/google/services/marker_service.dart';
+import 'package:saudeMentalSus/features/maps/presentation/screens/tabs/show_map.dart';
+import 'package:saudeMentalSus/features/maps/presentation/services/marker_service.dart';
 import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
 
 class Search extends StatefulWidget {

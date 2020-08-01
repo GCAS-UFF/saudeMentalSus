@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:saudeMentalSus/features/google/services/generate_list_cards.dart';
+import 'package:saudeMentalSus/features/maps/presentation/services/generate_list_cards.dart';
 import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
 
 class ShowListCards extends StatefulWidget {
@@ -21,22 +21,24 @@ class _ShowListCardsState extends State<ShowListCards> {
   load(BuildContext context) async {
     var data = await generateListCards.generate(
         context, widget.cities, widget.currentPosition);
-    setState((){
+    setState(() {
       cards = data;
     });
   }
-  
+
   @override
-  void initState(){
+  void initState() {
     load(context);
     super.initState();
   }
-  
+
   @override
-  Widget build(BuildContext context){
-    return (cards == null)? Center(child: CircularProgressIndicator()) : ListView.builder(
-      itemCount: cards.length,
-      itemBuilder: (context, index) => cards[index],
-    );
+  Widget build(BuildContext context) {
+    return (cards == null)
+        ? Center(child: CircularProgressIndicator())
+        : ListView.builder(
+            itemCount: cards.length,
+            itemBuilder: (context, index) => cards[index],
+          );
   }
 }
