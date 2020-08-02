@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:saudeMentalSus/features/google/screens/components/app_bar_search.dart';
 import 'package:saudeMentalSus/features/google/screens/tabs/show_map.dart';
 import 'package:saudeMentalSus/features/google/services/marker_service.dart';
 import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
@@ -26,6 +27,7 @@ class _SearchState extends State<Search> {
     return FutureProvider(
       create: (context) => citiesProvider,
       child: Scaffold(
+        appBar: AppBarSearch(),
         body: (currentPosition != null)
             ? Consumer<List<CityModel>>(
                 builder: (_, cities, __) {
