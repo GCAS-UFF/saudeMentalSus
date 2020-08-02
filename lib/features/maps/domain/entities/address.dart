@@ -16,4 +16,7 @@ class Address extends Equatable {
 
   @override
   List<Object> get props => [street, district, houseNumber, geolocationPoint];
+
+  @override
+  String toString() => "$street, $houseNumber, $district";
 }

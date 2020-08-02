@@ -1,43 +1,51 @@
-import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:provider/provider.dart';
+import 'package:saudeMentalSus/core/resources/images.dart';
+import 'package:saudeMentalSus/features/google/screens/search.dart';
+import 'package:saudeMentalSus/features/google/services/geolocator_service.dart';
 import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
 import 'package:saudeMentalSus/features/maps/data/datasources/maps_local_data_source.dart';
-import 'core/error/failure.dart';
-import 'features/maps/domain/entities/city.dart';
-import 'features/maps/domain/usecases/get_city_services.dart';
 import 'injection_container.dart' as di;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // debugPaintSizeEnabled = true;
   await di.init();
-  runApp(MyApp());
+  runApp(Google());
 }
 
-class MyApp extends StatelessWidget {
+class Google extends StatelessWidget {
+  final locatorService = GeoLocatorService();
+  final citiesService = MapsLocalDataSourceImpl();
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      home: Scaffold(
-        body: Center(
-          child: FutureBuilder(
-            future: di.sl<GetCityServices>()(
-              Params(city: null),
-            ),
-            builder: (BuildContext context,
-                AsyncSnapshot<Either<Failure, City>> snapshot) {
-              if (snapshot.hasData) {
-                return snapshot.data.fold(
-                  (l) => Text(l.toString()),
-                  (r) => Text(r.name),
-                );
-              } else {
-                return Text("To loading");
-              }
-            },
-          ),
+    return MultiProvider(
+      providers: [
+        FutureProvider(create: (context) => locatorService.getLocation()),
+        FutureProvider(create: (context) {
+          ImageConfiguration configuration =
+              createLocalImageConfiguration(context);
+          return BitmapDescriptor.fromAssetImage(
+              configuration, Images.map_marker);
+        }),
+        ProxyProvider2<Position, BitmapDescriptor, Future<List<CityModel>>>(
+          update: (context, position, icon, places) {
+            return (position != null)
+                ? Future(() async =>
+                    [await citiesService.getCityDataFromJson("Niterói")])
+                : null;
+          },
+        )
+      ],
+      child: MaterialApp(
+        title: 'Saúde Mental SUS',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
         ),
+        home: Search(),
       ),
     );
   }
