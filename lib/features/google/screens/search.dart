@@ -21,8 +21,13 @@ class _SearchState extends State<Search> {
     final citiesProvider = Provider.of<Future<List<CityModel>>>(context);
 
     final markerService = MarkerService(
-        latitude: currentPosition.latitude,
-        longitude: currentPosition.longitude);
+        latitude: (currentPosition == null || currentPosition.latitude == null)
+            ? 0
+            : currentPosition.latitude,
+        longitude:
+            (currentPosition == null || currentPosition.longitude == null)
+                ? 0
+                : currentPosition.longitude);
 
     return FutureProvider(
       create: (context) => citiesProvider,

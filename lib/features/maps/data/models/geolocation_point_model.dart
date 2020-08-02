@@ -9,7 +9,7 @@ class GeolocationPointModel extends GeolocationPoint {
   factory GeolocationPointModel.fromJson(Map<String, dynamic> json) {
     if (json == null) return null;
     return GeolocationPointModel(
-        latitude: json['latitude'], longitude: json['longitude']);
+        latitude: json['lat'], longitude: json['long']);
   }
 
   factory GeolocationPointModel.fromPosition(Position position) {

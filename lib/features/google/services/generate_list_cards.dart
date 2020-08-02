@@ -18,8 +18,8 @@ class GenerateListCards {
             ? await geoLocatorService.getDistance(
                 currentPosition.latitude,
                 currentPosition.longitude,
-                service.institution.address.latitude,
-                service.institution.address.longitude)
+                service.institution.address.geolocationPoint.latitude,
+                service.institution.address.geolocationPoint.longitude)
             : null;
         final card = Card(
           child: ListTile(
@@ -41,8 +41,8 @@ class GenerateListCards {
               onPressed: () => m.openMapsSheet(
                   context,
                   service.institution.name,
-                  service.institution.address.latitude,
-                  service.institution.address.longitude),
+                  service.institution.address.geolocationPoint.latitude,
+                  service.institution.address.geolocationPoint.longitude),
             ),
           ),
         );
