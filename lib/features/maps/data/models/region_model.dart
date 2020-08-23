@@ -1,13 +1,17 @@
+import 'package:saudeMentalSus/features/maps/data/models/service_model.dart';
 import 'package:saudeMentalSus/features/maps/domain/entities/region.dart';
 
 import 'package:meta/meta.dart';
 
 class RegionModel extends Region {
-  RegionModel({@required name}) : super(name: name);
+  RegionModel({@required name, @required servicesList})
+      : super(name: name, servicesList: servicesList);
 
   factory RegionModel.fromJson(Map<String, dynamic> json) {
     if (json == null) return null;
-    return RegionModel(name: json['name']);
+    return RegionModel(
+        name: json['name'],
+        servicesList: ServiceModel.listFromJson(json['servicesList']));
   }
 
   static List<RegionModel> listFromJson(List<dynamic> json) {

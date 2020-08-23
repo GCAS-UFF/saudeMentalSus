@@ -2,17 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:saudeMentalSus/core/util/getInfo.dart';
 import 'package:saudeMentalSus/features/google/services/generate_list_items.dart';
-import 'package:saudeMentalSus/features/google/services/geolocator_service.dart';
 import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
 import 'package:saudeMentalSus/features/maps/data/sources/maps_launcher.dart';
 import 'package:saudeMentalSus/features/maps/domain/entities/service.dart';
 
+import 'geolocator_service.dart';
+
 class MarkerService {
   final m = MapsLauncher();
-  final geoLocatorService = GeoLocatorService();
-
-  double latitude;
-  double longitude;
+  final double latitude;
+  final double longitude;
 
   MarkerService({@required this.latitude, @required this.longitude});
 
@@ -48,7 +47,7 @@ class MarkerService {
   _showCard(BuildContext context, Service service) async {
     final lineFreeSpace = MediaQuery.of(context).size.width * 0.25;
     final distance = ((latitude != 0) && (longitude != 0))
-        ? await geoLocatorService.getDistance(
+        ? await GeoLocatorService().getDistance(
             latitude,
             longitude,
             service.institution.address.geolocationPoint.latitude,

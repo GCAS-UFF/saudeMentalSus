@@ -5,7 +5,6 @@ import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
 import 'package:saudeMentalSus/features/maps/data/sources/maps_launcher.dart';
 
 class GenerateListCards {
-  final geoLocatorService = GeoLocatorService();
   Future<List<Widget>> generate(BuildContext context, List<CityModel> cities,
       LatLng currentPosition) async {
     List<Widget> cards = [];
@@ -15,7 +14,7 @@ class GenerateListCards {
       for (var service in city.servicesList) {
         final distance = ((currentPosition.latitude != 0) &&
                 (currentPosition.longitude != 0))
-            ? await geoLocatorService.getDistance(
+            ? await GeoLocatorService().getDistance(
                 currentPosition.latitude,
                 currentPosition.longitude,
                 service.institution.address.geolocationPoint.latitude,

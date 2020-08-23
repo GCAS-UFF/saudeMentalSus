@@ -7,25 +7,25 @@ import 'package:meta/meta.dart';
 import 'coord_model.dart';
 
 class ServiceModel extends Service {
-  ServiceModel(
-      {@required institution,
-      @required region,
-      @required coord,
-      @required reception})
+  ServiceModel({@required id, institution, coord, reception})
       : super(
+            id: id,
             institution: institution,
-            regions: region,
             coords: coord,
             receptions: reception);
 
-  factory ServiceModel.fromJson(Map<String, dynamic> json) {
+  factory ServiceModel.fromJson(dynamic json) {
     if (json == null) return null;
-    return ServiceModel(
-      institution: InstitutionModel.fromJson(json['institution']),
-      region: RegionModel.listFromJson(json['region']),
-      coord: CoordModel.listFromJson(json['coord']),
-      reception: ReceptionModel.listFromJson(json['reception']),
-    );
+    if (json is Map) {
+      return ServiceModel(
+        id: json['id'],
+        institution: InstitutionModel.fromJson(json['institution']),
+        coord: CoordModel.listFromJson(json['coord']),
+        reception: ReceptionModel.listFromJson(json['reception']),
+      );
+    } else {
+      return ServiceModel(id: json);
+    }
   }
 
   static List<ServiceModel> listFromJson(List<dynamic> json) {
