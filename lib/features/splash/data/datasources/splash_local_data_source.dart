@@ -10,7 +10,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:meta/meta.dart';
 
 abstract class SplashLocalDataSource {
-  Future<void> loadCityServices();
+  Future<bool> loadCityServices();
 }
 
 class SplashLocalDataSourceImpl implements SplashLocalDataSource {
@@ -20,7 +20,7 @@ class SplashLocalDataSourceImpl implements SplashLocalDataSource {
   SplashLocalDataSourceImpl({@required this.sharedPreferences});
 
   @override
-  Future<void> loadCityServices() async {
+  Future<bool> loadCityServices() async {
     //Initialize map to contains services list based on city
     cityServicesInformation = Map<String, List<ServiceModel>>();
 
@@ -39,9 +39,11 @@ class SplashLocalDataSourceImpl implements SplashLocalDataSource {
         cityServicesInformation["${city.name} - ${city.federationUnity}"] =
             city.servicesList;
       }
-      // Trnasform result in json and save in string format
+      // Transform result in json and save in string format
       sharedPreferences.setString(
           Keys.CITY_SERVICE_LIST, _saveIntoLocalStorage());
+
+      return true;
     } catch (e) {
       print("[SplashLocalDataSourceImpl] ${e.toString()}");
       throw ServerException();

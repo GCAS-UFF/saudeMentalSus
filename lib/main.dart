@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'features/splash/presentation/mobx/splash_store.dart';
 import 'features/splash/presentation/pages/splash_page.dart';
 import 'injection_container.dart' as di;
 
@@ -17,7 +19,10 @@ class Google extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SplashPage(),
+      home: Provider(
+        create: (_) => di.sl<SplashStore>(),
+        child: SplashPage(),
+      ),
     );
   }
 }
