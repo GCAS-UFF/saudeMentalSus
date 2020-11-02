@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'features/splash/presentation/pages/splash_page.dart';
 import 'injection_container.dart' as di;
 
 Future<void> main() async {
@@ -16,7 +17,7 @@ class Google extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(),
+      home: SplashPage(),
     );
   }
 }

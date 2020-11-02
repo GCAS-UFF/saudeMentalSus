@@ -23,4 +23,20 @@ class ReceptionModel extends Reception {
         ? List<ReceptionModel>()
         : json.map((value) => ReceptionModel.fromJson(value)).toList();
   }
+
+  Map<String, dynamic> toJson() {
+    Map<String, dynamic> json = {};
+    if (weekDay != null) json['weekDay'] = weekDay;
+    if (openingHour != null) json['openingHour'] = openingHour;
+    if (closingHour != null) json['closingHour'] = closingHour;
+
+    return json;
+  }
+
+  static List<dynamic> listToJson(List<ReceptionModel> receptionModels) {
+    if (receptionModels == null) return null;
+    return receptionModels.map((ReceptionModel receptionModel) {
+      return receptionModel.toJson();
+    }).toList();
+  }
 }

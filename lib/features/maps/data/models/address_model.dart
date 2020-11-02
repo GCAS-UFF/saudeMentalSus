@@ -22,4 +22,15 @@ class AddressModel extends Address {
         houseNumber: json['houseNumber'],
         geolocationPoint: GeolocationPointModel.fromJson(json));
   }
+
+  Map<String, dynamic> toJson() {
+    Map<String, dynamic> json = {};
+    if (street != null) json['street'] = street;
+    if (district != null) json['district'] = district;
+    if (houseNumber != null) json['houseNumber'] = houseNumber;
+    if (geolocationPoint != null)
+      json.addAll(GeolocationPointModel.fromEntity(geolocationPoint).toJson());
+
+    return json;
+  }
 }

@@ -15,4 +15,18 @@ class RegionModel extends Region {
         ? List<RegionModel>()
         : json.map((value) => RegionModel.fromJson(value)).toList();
   }
+
+  Map<String, dynamic> toJson() {
+    Map<String, dynamic> json = {};
+    if (name != null) json['name'] = name;
+
+    return json;
+  }
+
+  static List<dynamic> listToJson(List<RegionModel> regionModels) {
+    if (regionModels == null) return null;
+    return regionModels.map((RegionModel regionModel) {
+      return regionModel.toJson();
+    }).toList();
+  }
 }
