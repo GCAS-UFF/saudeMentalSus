@@ -19,7 +19,7 @@ class MapsLocalDataSourceImpl extends MapsLocalDataSource {
   Future<CityModel> getCityDataFromJson(String currentCity) async {
     try {
       //Get json from assets as string
-      String value = await rootBundle.loadString('assets/database.json');
+      String value = await rootBundle.loadString('assets/rj_niteroi.json');
       //Transform string to json
       var data = json.decode(value);
       //Stop processing if theres no data

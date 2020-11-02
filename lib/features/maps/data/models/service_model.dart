@@ -1,4 +1,5 @@
-import 'package:saudeMentalSus/features/maps/data/models/institution_model.dart';
+import 'package:saudeMentalSus/core/util/converter.dart';
+import 'package:saudeMentalSus/features/maps/data/models/address_model.dart';
 import 'package:saudeMentalSus/features/maps/data/models/reception_model.dart';
 import 'package:saudeMentalSus/features/maps/data/models/region_model.dart';
 import 'package:saudeMentalSus/features/maps/domain/entities/service.dart';
@@ -8,23 +9,36 @@ import 'coord_model.dart';
 
 class ServiceModel extends Service {
   ServiceModel(
-      {@required institution,
-      @required region,
+      {@required region,
       @required coord,
-      @required reception})
+      @required reception,
+      @required name,
+      @required phones,
+      @required emails,
+      @required type,
+      @required address})
       : super(
-            institution: institution,
             regions: region,
             coords: coord,
-            receptions: reception);
+            receptions: reception,
+            name: name,
+            phones: phones,
+            emails: emails,
+            institutionType: type,
+            address: address);
 
   factory ServiceModel.fromJson(Map<String, dynamic> json) {
     if (json == null) return null;
     return ServiceModel(
-      institution: InstitutionModel.fromJson(json['institution']),
       region: RegionModel.listFromJson(json['region']),
       coord: CoordModel.listFromJson(json['coord']),
       reception: ReceptionModel.listFromJson(json['reception']),
+      name: json['name'],
+      phones: Converter.convertListDynamicToListString(json['phone']),
+      emails: Converter.convertListDynamicToListString(json['email']),
+      type: Converter.convertStringToEnum<InstitutionType>(
+          json['type'], InstitutionType.values),
+      address: AddressModel.fromJson(json['address']),
     );
   }
 
