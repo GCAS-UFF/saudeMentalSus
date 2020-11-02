@@ -51,14 +51,24 @@ class ServiceModel extends Service {
   Map<String, dynamic> toJson() {
     Map<String, dynamic> json = {};
     if (name != null) json['name'] = name;
-    if (institutionType != null)  json['type'] = Converter.convertEnumToString(institutionType);
-    if (regions != null) json['region']=(RegionModel.listToJson(regions));
+    if (institutionType != null)
+      json['type'] = Converter.convertEnumToString(institutionType);
+    if (regions != null) json['region'] = (RegionModel.listToJson(regions));
     if (coords != null) json['coord'] = CoordModel.listToJson(coords);
-    if (receptions != null) json['reception'] = ReceptionModel.listToJson(receptions);
+    if (receptions != null)
+      json['reception'] = ReceptionModel.listToJson(receptions);
     if (phones != null) json['phone'] = phones;
     if (emails != null) json['email'] = emails;
-    if (address != null) json['address'] = AddressModel.fromEntity(address).toJson();
+    if (address != null)
+      json['address'] = AddressModel.fromEntity(address).toJson();
 
     return json;
+  }
+
+  static List<dynamic> listToJson(List<ServiceModel> serviceModels) {
+    if (serviceModels == null) return null;
+    return serviceModels.map((ServiceModel serviceModel) {
+      return serviceModel.toJson();
+    }).toList();
   }
 }
