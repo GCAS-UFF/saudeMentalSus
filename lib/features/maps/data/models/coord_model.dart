@@ -23,4 +23,22 @@ class CoordModel extends Coord {
         ? List<CoordModel>()
         : json.map((value) => CoordModel.fromJson(value)).toList();
   }
+
+  Map<String, dynamic> toJson() {
+    Map<String, dynamic> json = {};
+    if (name != null) json['name'] = name;
+    if (coordType != null)
+      json['type'] = Converter.convertEnumToString(coordType);
+    if (phones != null) json['phone'] = phones;
+    if (emails != null) json['email'] = emails;
+
+    return json;
+  }
+
+  static List<dynamic> listToJson(List<CoordModel> coordModels) {
+    if (coordModels == null) return null;
+    return coordModels.map((CoordModel coordModel) {
+      return coordModel.toJson();
+    }).toList();
+  }
 }
