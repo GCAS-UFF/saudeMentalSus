@@ -7,6 +7,9 @@ import 'package:saudeMentalSus/features/maps/presentation/app_bar_search.dart';
 import 'package:saudeMentalSus/features/maps/presentation/show_mapa.dart';
 
 class Search extends StatefulWidget {
+  final LatLng currentPosition;
+
+  const Search({Key key, @required this.currentPosition}) : super(key: key);
   @override
   _SearchState createState() => _SearchState();
 }
@@ -20,7 +23,7 @@ class _SearchState extends State<Search> {
       appBar: AppBarSearch(),
       //body: Container(),
       body: ShowMap(
-        currentPosition: LatLng(0, 0),
+        currentPosition: widget.currentPosition,
         markers: [],
       ),
     );

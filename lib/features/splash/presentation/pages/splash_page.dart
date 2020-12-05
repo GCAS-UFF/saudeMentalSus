@@ -39,7 +39,9 @@ class _SplashPageState extends State<SplashPage> {
             {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
-                  builder: (context) => Search(),
+                  builder: (context) => Search(
+                    currentPosition: _splashStore.location,
+                  ),
                 ),
               )
             }
