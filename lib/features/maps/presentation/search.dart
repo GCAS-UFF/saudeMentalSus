@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:saudeMentalSus/features/maps/data/models/city_model.dart';
 import 'package:saudeMentalSus/features/maps/presentation/app_bar_search.dart';
+import 'package:saudeMentalSus/features/maps/presentation/show_mapa.dart';
 
 class Search extends StatefulWidget {
   @override
@@ -16,7 +18,11 @@ class _SearchState extends State<Search> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarSearch(),
-      body: Container(),
+      //body: Container(),
+      body: ShowMap(
+        currentPosition: LatLng(0, 0),
+        markers: [],
+      ),
     );
   }
 }
