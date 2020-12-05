@@ -4,6 +4,7 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:mobx/mobx.dart';
 import 'package:provider/provider.dart';
 import 'package:saudeMentalSus/features/maps/presentation/maps_page.dart';
+import 'package:saudeMentalSus/features/maps/presentation/search.dart';
 import 'package:saudeMentalSus/features/splash/presentation/mobx/splash_store.dart';
 
 class SplashPage extends StatefulWidget {
@@ -38,7 +39,7 @@ class _SplashPageState extends State<SplashPage> {
             {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
-                  builder: (context) => MapsPage(),
+                  builder: (context) => Search(),
                 ),
               )
             }

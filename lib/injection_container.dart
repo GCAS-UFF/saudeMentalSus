@@ -2,7 +2,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:get_it/get_it.dart';
 import 'package:saudeMentalSus/features/maps/data/datasources/maps_local_data_source.dart';
 import 'package:saudeMentalSus/features/maps/domain/repositories/maps_repository.dart';
-import 'package:saudeMentalSus/features/maps/domain/usecases/get_city_services.dart';
+import 'package:saudeMentalSus/features/maps/domain/usecases/search_services.dart';
 import 'package:saudeMentalSus/features/splash/data/datasources/splash_local_data_source.dart';
 import 'package:saudeMentalSus/features/splash/domain/repositories/splash_repository.dart';
 import 'package:saudeMentalSus/features/splash/domain/usecases/load_city_services.dart';
@@ -27,7 +27,7 @@ Future<void> init() async {
 
 _initMaps() {
   // Use cases
-  sl.registerLazySingleton(() => GetCityServices(sl()));
+  sl.registerLazySingleton(() => SearchServices(sl()));
 
   // Repository
   sl.registerLazySingleton<MapsRepository>(
@@ -38,7 +38,7 @@ _initMaps() {
 
   // Data sources
   sl.registerLazySingleton<MapsLocalDataSource>(
-    () => MapsLocalDataSourceImpl(geolocator: sl()),
+    () => MapsLocalDataSourceImpl(geolocator: sl(), sharedPreferences: sl()),
   );
 }
 
