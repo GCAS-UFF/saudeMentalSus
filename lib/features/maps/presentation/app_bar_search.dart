@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:saudeMentalSus/features/maps/presentation/data_search.dart';
 
 class AppBarSearch extends StatefulWidget implements PreferredSizeWidget {
   @override
@@ -19,7 +20,9 @@ class _AppBarSearchState extends State<AppBarSearch> {
         IconButton(
             icon: Icon(Icons.search),
             onPressed: () async {
-              print("cliquei");
+              final newCity =
+                  await showSearch(context: context, delegate: DataSearch());
+              print(newCity);
             }),
       ],
     );
