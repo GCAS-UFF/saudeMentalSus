@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:mobx/mobx.dart';
 import 'package:provider/provider.dart';
-import 'package:saudeMentalSus/features/maps/presentation/maps_page.dart';
 import 'package:saudeMentalSus/features/maps/presentation/search.dart';
 import 'package:saudeMentalSus/features/splash/presentation/mobx/splash_store.dart';
 
@@ -40,7 +40,7 @@ class _SplashPageState extends State<SplashPage> {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
                   builder: (context) => Search(
-                    currentPosition: _splashStore.location,
+                    currentPosition: LatLng(-22.8808, -43.1043),
                   ),
                 ),
               )

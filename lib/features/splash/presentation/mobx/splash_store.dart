@@ -14,15 +14,11 @@ class SplashStore extends _SplashStore with _$SplashStore {
 
 enum StoreState { initial, loading, loaded }
 
-enum LocationState { initial, loading, loaded, rejected }
-
 abstract class _SplashStore with Store {
   final LoadCityServices _loadCityServices;
 
   _SplashStore(this._loadCityServices) {
-    _locationStatus = LocationState.initial;
     loadData();
-    loadLocation();
   }
 
   @observable
@@ -31,32 +27,17 @@ abstract class _SplashStore with Store {
   bool isDataLoaded;
 
   @observable
-  Position _currentPosition;
-  @observable
-  LocationState _locationStatus;
-
-  @observable
   String errorMessage;
 
   @computed
   StoreState get state {
     if ((_dataLoadedFuture == null ||
-            _dataLoadedFuture.status == FutureStatus.rejected) &&
-        (_currentPosition == null ||
-            _locationStatus == LocationState.rejected)) {
+        _dataLoadedFuture.status == FutureStatus.rejected)) {
       return StoreState.initial;
     }
-    return ((_dataLoadedFuture.status == FutureStatus.pending) &&
-            (_locationStatus == LocationState.loading))
+    return (_dataLoadedFuture.status == FutureStatus.pending)
         ? StoreState.loading
         : StoreState.loaded;
-  }
-
-  @computed
-  LatLng get location {
-    return (_locationStatus == LocationState.loaded)
-        ? LatLng(_currentPosition.latitude, _currentPosition.longitude)
-        : LatLng(0, 0);
   }
 
   @action
@@ -69,21 +50,5 @@ abstract class _SplashStore with Store {
     }, (r) {
       isDataLoaded = r;
     });
-  }
-
-  @action
-  void loadLocation() async {
-    errorMessage = null;
-    _locationStatus = LocationState.loading;
-    final Geolocator geo = Geolocator()..forceAndroidLocationManager;
-    try {
-      Position pos =
-          await geo.getCurrentPosition(desiredAccuracy: LocationAccuracy.best);
-      _currentPosition = pos;
-      _locationStatus = LocationState.loaded;
-    } catch (e) {
-      errorMessage = e.toString();
-      _locationStatus = LocationState.rejected;
-    }
   }
 }

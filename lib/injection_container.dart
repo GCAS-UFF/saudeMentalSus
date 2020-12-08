@@ -3,6 +3,7 @@ import 'package:get_it/get_it.dart';
 import 'package:saudeMentalSus/features/maps/data/datasources/maps_local_data_source.dart';
 import 'package:saudeMentalSus/features/maps/domain/repositories/maps_repository.dart';
 import 'package:saudeMentalSus/features/maps/domain/usecases/search_services.dart';
+import 'package:saudeMentalSus/features/maps/presentation/mobx/maps_store.dart';
 import 'package:saudeMentalSus/features/splash/data/datasources/splash_local_data_source.dart';
 import 'package:saudeMentalSus/features/splash/domain/repositories/splash_repository.dart';
 import 'package:saudeMentalSus/features/splash/domain/usecases/load_city_services.dart';
@@ -26,6 +27,12 @@ Future<void> init() async {
 }
 
 _initMaps() {
+  //Mobx
+  sl.registerLazySingleton(
+    () => MapsStore(
+      sl(),
+    ),
+  );
   // Use cases
   sl.registerLazySingleton(() => SearchServices(sl()));
 

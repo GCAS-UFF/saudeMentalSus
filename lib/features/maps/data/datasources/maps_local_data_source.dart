@@ -24,6 +24,8 @@ class MapsLocalDataSourceImpl extends MapsLocalDataSource {
   Future<List<SearchResultModel>> searchServices(String searchString) async {
     try {
       if (cityServicesInformation == null) {
+        //Instantiate empty map
+        cityServicesInformation = {};
         //Get json from sharedPreferences
         String value = sharedPreferences.getString(Keys.CITY_SERVICE_LIST);
         //Transform string to json
