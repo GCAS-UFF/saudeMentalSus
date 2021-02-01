@@ -23,32 +23,32 @@ dependencies:
   # Service locator
   get_it: ^2.0.1
   
-  # Bloc for state management
-  flutter_bloc: ^3.0.0
-  
   # Value equality
   equatable: ^1.0.0
   
   # Functional programming thingies
   dartz: ^0.8.6
   
-  # Remote API
-  data_connection_checker: ^0.3.4
-  http: ^0.12.0+2
-  
   # Local cache
   shared_preferences: ^0.5.6
+
+  # Mobx for state managemnent
+  mobx: ^0.3.10
+  flutter_mobx: ^0.3.4+1
 
   #Maps dependencies
   google_maps_flutter: ^0.5.21
   geolocator: ^5.1.5
   map_launcher: ^0.7.1
 
+  # Launch external apps
   url_launcher: ^5.0.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner:
+  mobx_codegen: ^0.3.10+1
 
 flutter:
 
@@ -59,7 +59,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/database.json
+    - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

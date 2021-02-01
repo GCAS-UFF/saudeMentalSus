@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:saudeMentalSus/features/google/services/search_city.dart';
+import 'package:saudeMentalSus/features/maps/presentation/data_search.dart';
 
 class AppBarSearch extends StatefulWidget implements PreferredSizeWidget {
   @override
@@ -10,7 +10,7 @@ class AppBarSearch extends StatefulWidget implements PreferredSizeWidget {
 }
 
 class _AppBarSearchState extends State<AppBarSearch> {
-  String city = 'Niterói';
+  String city = 'Brasil';
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -20,12 +20,10 @@ class _AppBarSearchState extends State<AppBarSearch> {
         IconButton(
             icon: Icon(Icons.search),
             onPressed: () async {
-              final newCity =
-                  await showSearch(context: context, delegate: SearchCity());
-              if (newCity != null) {
-                setState(() {
-                  city = newCity;
-                });
+              {
+                final newCity =
+                    await showSearch(context: context, delegate: DataSearch());
+                print(newCity);
               }
             }),
       ],
