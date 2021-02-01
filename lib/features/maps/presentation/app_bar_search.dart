@@ -10,7 +10,7 @@ class AppBarSearch extends StatefulWidget implements PreferredSizeWidget {
 }
 
 class _AppBarSearchState extends State<AppBarSearch> {
-  String city = 'Niterói';
+  String city = 'Brasil';
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -20,9 +20,11 @@ class _AppBarSearchState extends State<AppBarSearch> {
         IconButton(
             icon: Icon(Icons.search),
             onPressed: () async {
-              final newCity =
-                  await showSearch(context: context, delegate: DataSearch());
-              print(newCity);
+              {
+                final newCity =
+                    await showSearch(context: context, delegate: DataSearch());
+                print(newCity);
+              }
             }),
       ],
     );

@@ -9,7 +9,7 @@ import 'package:meta/meta.dart';
 
 abstract class MapsLocalDataSource {
   Future<List<SearchResultModel>> searchServices(String searchString);
-  Future<String> getUserLocation();
+  Future<Position> getUserLocation();
 }
 
 class MapsLocalDataSourceImpl extends MapsLocalDataSource {
@@ -50,18 +50,12 @@ class MapsLocalDataSourceImpl extends MapsLocalDataSource {
   }
 
   @override
-  Future<String> getUserLocation() async {
+  Future<Position> getUserLocation() async {
     try {
       //Get user geopoint
       Position position = await geolocator.getCurrentPosition(
           desiredAccuracy: LocationAccuracy.best);
-      //Transform into placemarks
-      List<Placemark> p = await geolocator.placemarkFromCoordinates(
-          position.latitude, position.longitude);
-      //Get first place mark
-      Placemark place = p[0];
-      //Get city from place mark
-      return place.subAdministrativeArea;
+      return position;
     } catch (e) {
       print("[MapsLocalDataSourceImpl] ${e.toString()}");
       throw ServerException();

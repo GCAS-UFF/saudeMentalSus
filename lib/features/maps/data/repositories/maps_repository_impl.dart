@@ -1,3 +1,4 @@
+import 'package:geolocator/geolocator.dart';
 import 'package:saudeMentalSus/core/error/exception.dart';
 import 'package:saudeMentalSus/features/maps/data/datasources/maps_local_data_source.dart';
 import 'package:saudeMentalSus/core/error/failure.dart';
@@ -17,13 +18,24 @@ class MapsRepositoryImpl extends MapsRepository {
     try {
       String currentSearchString = searchString;
 
-      if (currentSearchString == null) {
-        currentSearchString = await localDataSource.getUserLocation();
-      }
+      // if (currentSearchString == null) {
+      //   currentSearchString = await localDataSource.getUserLocation();
+      // }
 
       print(currentSearchString);
 
       return Right(await localDataSource.searchServices(searchString));
+    } on ServerException {
+      return Left(ServerFailure());
+    }
+  }
+
+  @override
+  Future<Either<Failure, Position>> getCurrentPosition() async {
+    try {
+      Position position = await localDataSource.getUserLocation();
+      print(position);
+      return Right(position);
     } on ServerException {
       return Left(ServerFailure());
     }

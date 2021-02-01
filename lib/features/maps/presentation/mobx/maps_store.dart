@@ -16,7 +16,7 @@ abstract class _MapsStore with Store {
   final SearchServices _searchServices;
 
   _MapsStore(this._searchServices) {
-    searchResults("Niterói");
+    searchResults("");
   }
 
   @observable

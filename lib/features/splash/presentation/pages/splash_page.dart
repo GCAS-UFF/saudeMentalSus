@@ -33,14 +33,16 @@ class _SplashPageState extends State<SplashPage> {
         },
       ),
       reaction(
-        (_) => _splashStore.isDataLoaded,
+        (_) => _splashStore.state == StoreState.loaded,
         (bool sucess) => {
           if (sucess != null && sucess)
             {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
                   builder: (context) => Search(
-                    currentPosition: LatLng(-22.8808, -43.1043),
+                    currentPosition: LatLng(
+                        _splashStore.currentPosition.latitude,
+                        _splashStore.currentPosition.longitude),
                   ),
                 ),
               )

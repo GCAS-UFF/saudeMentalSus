@@ -2,6 +2,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:get_it/get_it.dart';
 import 'package:saudeMentalSus/features/maps/data/datasources/maps_local_data_source.dart';
 import 'package:saudeMentalSus/features/maps/domain/repositories/maps_repository.dart';
+import 'package:saudeMentalSus/features/maps/domain/usecases/get_current_position.dart';
 import 'package:saudeMentalSus/features/maps/domain/usecases/search_services.dart';
 import 'package:saudeMentalSus/features/maps/presentation/mobx/maps_store.dart';
 import 'package:saudeMentalSus/features/splash/data/datasources/splash_local_data_source.dart';
@@ -35,6 +36,7 @@ _initMaps() {
   );
   // Use cases
   sl.registerLazySingleton(() => SearchServices(sl()));
+  sl.registerLazySingleton(() => GetCurrentPosition(sl()));
 
   // Repository
   sl.registerLazySingleton<MapsRepository>(
@@ -53,6 +55,7 @@ _initSplash() {
   //Mobx
   sl.registerLazySingleton(
     () => SplashStore(
+      sl(),
       sl(),
     ),
   );
