@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:mobx/mobx.dart';
 import 'package:provider/provider.dart';
@@ -65,19 +66,24 @@ class _SplashPageState extends State<SplashPage> {
         builder: (_) {
           switch (_splashStore.state) {
             case StoreState.initial:
-              return Center(
-                child: Text("Initial"),
-              );
+              return LoadingDots();
             case StoreState.loading:
-              return Center(
-                child: Text("Loading"),
-              );
+              return LoadingDots();
             case StoreState.loaded:
-              return Center(
-                child: Text("Loaded"),
-              );
+              return LoadingDots();
           }
         },
+      ),
+    );
+  }
+}
+
+class LoadingDots extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: SpinKitThreeBounce(
+        color: Color(0xff5E9B9E),
       ),
     );
   }

@@ -44,6 +44,9 @@ dependencies:
   # Launch external apps
   url_launcher: ^5.0.3
 
+  #Loading Indicator
+  flutter_spinkit: ^4.1.2+1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
