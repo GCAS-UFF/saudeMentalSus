@@ -5,6 +5,7 @@ import 'features/splash/presentation/mobx/splash_store.dart';
 import 'features/splash/presentation/pages/splash_page.dart';
 import 'injection_container.dart' as di;
 
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // debugPaintSizeEnabled = true;
@@ -34,3 +35,4 @@ class Google extends StatelessWidget {
     );
   }
 }
+
