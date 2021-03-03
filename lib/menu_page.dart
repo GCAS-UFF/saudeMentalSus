@@ -27,16 +27,16 @@ class NavDrawer extends StatelessWidget {
               style: TextStyle(fontSize: 16),
             ),
             onTap: () => {
-              openUrl_ProfessorResearch()
+
             },
           ),
           ListTile(
-            leading: Icon(Icons.account_balance),
-            title: Text('Página do governo',
+            leading: Icon(Icons.phone_android),
+            title: Text('Saúde Mental MS',
               style: TextStyle(fontSize: 16),
             ),
             onTap: () => {
-              openUrl_GovernamentPage()
+              openUrl_GovernamentApp()
             },
           ),
           ListTile(
@@ -65,8 +65,8 @@ class NavDrawer extends StatelessWidget {
     );
   }
 
-  openUrl_GovernamentPage() async {
-    const url = 'https://flutterando.com.br/';
+  openUrl_GovernamentApp() async {
+    const url = 'https://mobilems.saude.gov.br/saude-mental';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -74,12 +74,5 @@ class NavDrawer extends StatelessWidget {
     }
   }
 
-  openUrl_ProfessorResearch() async {
-    const url = 'https://www.facebook.com/';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
+
 }
