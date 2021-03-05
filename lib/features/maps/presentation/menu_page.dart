@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:saudeMentalSus/about_page.dart';
+import 'file:///C:/Users/PC/Documents/saudeMentalSus/lib/features/maps/presentation/about_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class NavDrawer extends StatelessWidget {
+class MenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -36,7 +36,7 @@ class NavDrawer extends StatelessWidget {
               style: TextStyle(fontSize: 16),
             ),
             onTap: () => {
-              openUrl_GovernamentApp()
+              getUrl('https://mobilems.saude.gov.br/saude-mental')
             },
           ),
           ListTile(
@@ -65,8 +65,8 @@ class NavDrawer extends StatelessWidget {
     );
   }
 
-  openUrl_GovernamentApp() async {
-    const url = 'https://mobilems.saude.gov.br/saude-mental';
+
+  getUrl(url) async {
     if (await canLaunch(url)) {
       await launch(url);
     } else {

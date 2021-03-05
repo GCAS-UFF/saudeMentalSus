@@ -10,7 +10,7 @@ import 'package:saudeMentalSus/features/maps/domain/entities/service.dart';
 import 'package:saudeMentalSus/features/maps/presentation/app_bar_search.dart';
 import 'package:saudeMentalSus/features/maps/presentation/show_mapa.dart';
 import '../../../injection_container.dart';
-import 'package:saudeMentalSus/menu_page.dart';
+import 'package:saudeMentalSus/features/maps/presentation/menu_page.dart';
 
 import 'mobx/maps_store.dart';
 
@@ -56,7 +56,7 @@ class _SearchState extends State<Search> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NavDrawer(),
+      drawer: MenuPage(),
       appBar: AppBarSearch(),
       //body: Container(),
       body: Observer(
