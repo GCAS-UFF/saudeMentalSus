@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'file:///C:/Users/PC/Documents/saudeMentalSus/lib/features/maps/presentation/about_page.dart';
+import 'package:saudeMentalSus/features/maps/presentation/about_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MenuPage extends StatelessWidget {
