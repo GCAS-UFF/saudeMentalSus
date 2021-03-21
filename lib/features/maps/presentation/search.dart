@@ -110,6 +110,7 @@ class _SearchState extends State<Search> {
   }
 
 
+
   _showCard(BuildContext context, Service service) async {
     final lineFreeSpace = MediaQuery.of(context).size.width * 0.25;
     final distance = ((widget.currentPosition.latitude != 0) &&
@@ -146,7 +147,6 @@ class _SearchState extends State<Search> {
                                   color: Colors.blue,
                                   borderRadius: BorderRadius.only(topLeft: Radius.circular(30), topRight: Radius.circular(30))
                                 ),
-                                //color: Colors.blue,
                                 child: Column(children: <Widget>[
                                   ListTile(
                                     title: Text(service.name,
@@ -161,16 +161,10 @@ class _SearchState extends State<Search> {
                                             .toString() + 'm' : 'N/A'}',
                                         style: TextStyle(color: Colors.white)),
                                     trailing: IconButton(
-                                      icon: Icon(Icons.directions, color: Colors.white,),
+                                      icon: Icon(Icons.directions, color: Colors.white, size: 35.0),
                                       color: Theme.of(context).primaryColor,
                                       onPressed: () =>
-                                          mapsLauncher.openMapsSheet(
-                                              context,
-                                              service.name,
-                                              service.address.geolocationPoint
-                                                  .latitude,
-                                              service.address.geolocationPoint
-                                                  .longitude),
+                                          mapsLauncher.openMapsSheet(context, service.name, service.address.geolocationPoint.latitude, service.address.geolocationPoint.longitude),
                                     ),
                                   ),
                                 ])),
