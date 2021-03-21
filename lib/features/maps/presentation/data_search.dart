@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:saudeMentalSus/features/maps/presentation/search.dart';
 
 class DataSearch extends SearchDelegate {
-  List<String> cities = ['NIterói', 'Campos', 'Araruama'];
+  List<String> cities = ['Niterói', 'Campos', 'Araruama'];
 
   @override
   List<Widget> buildActions(BuildContext context) {
@@ -23,12 +24,20 @@ class DataSearch extends SearchDelegate {
         });
   }
 
+
+
   @override
   Widget buildResults(BuildContext context) {
-    // TODO: implement buildResults
+    return Container(
+      child: Text(query),
+    );
+
+  }
+  /*
+
     throw UnimplementedError();
   }
-
+*/
   @override
   Widget buildSuggestions(BuildContext context) {
     // TODO: modifica o DataSearch.buildSuggestions para fazer aparecer o que foi feito de busca no back
