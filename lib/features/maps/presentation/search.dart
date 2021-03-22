@@ -15,9 +15,6 @@ import '../../../injection_container.dart';
 import 'package:saudeMentalSus/features/maps/presentation/menu_page.dart';
 import 'mobx/maps_store.dart';
 
-MapsLauncher mapsLauncher;
-GetInfo getInfo = GetInfo();
-
 class Search extends StatefulWidget {
   final LatLng currentPosition;
 
@@ -28,6 +25,7 @@ class Search extends StatefulWidget {
 }
 
 class _SearchState extends State<Search> {
+  MapsLauncher mapsLauncher = MapsLauncher();
   int currentIndex = 0;
   MapsStore _mapsStore;
   List<ReactionDisposer> _disposers;
@@ -39,9 +37,8 @@ class _SearchState extends State<Search> {
     _mapsStore ??= sl<MapsStore>();
     _disposers ??= [
       reaction(
-            (_) => _mapsStore.errorMessage,
-            (String message) =>
-        {
+        (_) => _mapsStore.errorMessage,
+        (String message) => {
           _sacaffoldKey.currentState.showSnackBar(SnackBar(
             content: Text(message),
           ))
@@ -91,7 +88,7 @@ class _SearchState extends State<Search> {
             infoWindow: InfoWindow(
                 title: service.name,
                 snippet:
-                '${service.address.street}, ${service.address.houseNumber}'),
+                    '${service.address.street}, ${service.address.houseNumber}'),
             position: LatLng(service.address.geolocationPoint.latitude,
                 service.address.geolocationPoint.longitude),
             markerId: MarkerId(markers.length.toString())));
@@ -104,22 +101,20 @@ class _SearchState extends State<Search> {
   Widget _buildBody(BuildContext context, List<Marker> markes) {
     return Center(
         child: ShowMap(
-          currentPosition: widget.currentPosition,
-          markers: markes,
-        ));
+      currentPosition: widget.currentPosition,
+      markers: markes,
+    ));
   }
-
-
 
   _showCard(BuildContext context, Service service) async {
     final lineFreeSpace = MediaQuery.of(context).size.width * 0.25;
     final distance = ((widget.currentPosition.latitude != 0) &&
-        (widget.currentPosition.longitude != 0))
+            (widget.currentPosition.longitude != 0))
         ? await Geolocator().distanceBetween(
-        widget.currentPosition.latitude,
-        widget.currentPosition.longitude,
-        service.address.geolocationPoint.latitude,
-        service.address.geolocationPoint.longitude)
+            widget.currentPosition.latitude,
+            widget.currentPosition.longitude,
+            service.address.geolocationPoint.latitude,
+            service.address.geolocationPoint.longitude)
         : null;
     showModalBottomSheet(
         elevation: 0,
@@ -137,68 +132,78 @@ class _SearchState extends State<Search> {
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.all(
-                             Radius.circular(30),
+                            Radius.circular(30),
                           )),
-                      child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: <Widget>[
-                            Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.blue,
-                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(30), topRight: Radius.circular(30))
-                                ),
-                                child: Column(children: <Widget>[
-                                  ListTile(
-                                    title: Text(service.name,
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold)),
-                                    subtitle: Text(
-                                        '${GetInfo.getValueFromEnum(service
-                                            .institutionType)} • ${(distance !=
-                                            null) ? (distance)
-                                            .round()
-                                            .toString() + 'm' : 'N/A'}',
-                                        style: TextStyle(color: Colors.white)),
-                                    trailing: IconButton(
-                                      icon: Icon(Icons.directions, color: Colors.white, size: 35.0),
-                                      color: Theme.of(context).primaryColor,
-                                      onPressed: () =>
-                                          mapsLauncher.openMapsSheet(context, service.name, service.address.geolocationPoint.latitude, service.address.geolocationPoint.longitude),
-                                    ),
-                                  ),
-                                ])),
-                            ListTile(
-                              leading: Icon(Icons.location_on, color: Colors.blue),
-                              title: Text(service.address.toString()),
-                            ),
-                            GenerateListItems.generateListTile(
-                                service.phones, Icons.phone),
-                            GenerateListItems.generateListTile(
-                                service.emails,
-                                Icons.alternate_email),
-                            GenerateListItems.generateOpeningHours(service.receptions),
-                            SizedBox(height: 10),
-                            Text('Coordenadores',
-                                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
-                            (service.coords.length != 0)
-                                ? ListView.separated(
+                      child: Column(mainAxisSize: MainAxisSize.min, children: <
+                          Widget>[
+                        Container(
+                            decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(30),
+                                    topRight: Radius.circular(30))),
+                            child: Column(children: <Widget>[
+                              ListTile(
+                                title: Text(service.name,
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold)),
+                                subtitle: Text(
+                                    '${GetInfo.getValueFromEnum(service.institutionType)} • ${(distance != null) ? (distance).round().toString() + 'm' : 'N/A'}',
+                                    style: TextStyle(color: Colors.white)),
+                                trailing: IconButton(
+                                    icon: Icon(Icons.directions,
+                                        color: Colors.white, size: 35.0),
+                                    color: Theme.of(context).primaryColor,
+                                    onPressed: () async {
+                                      try {
+                                        mapsLauncher.openMapsSheet(
+                                            context,
+                                            service.name,
+                                            service.address.geolocationPoint
+                                                .latitude,
+                                            service.address.geolocationPoint
+                                                .longitude);
+                                      } catch (e) {
+                                        print(e.toString());
+                                      }
+                                    }),
+                              ),
+                            ])),
+                        ListTile(
+                          leading: Icon(Icons.location_on, color: Colors.blue),
+                          title: Text(service.address.toString()),
+                        ),
+                        GenerateListItems.generateListTile(
+                            service.phones, Icons.phone),
+                        GenerateListItems.generateListTile(
+                            service.emails, Icons.alternate_email),
+                        GenerateListItems.generateOpeningHours(
+                            service.receptions),
+                        SizedBox(height: 10),
+                        Text('Coordenadores',
+                            style: TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.bold)),
+                        (service.coords.length != 0)
+                            ? ListView.separated(
                                 shrinkWrap: true,
                                 primary: false,
                                 itemCount: service.coords.length,
-                                separatorBuilder: (context, index) =>
-                                    Divider(
-                                        indent: lineFreeSpace,
-                                        endIndent: lineFreeSpace,
-                                        color: Colors.grey),
+                                separatorBuilder: (context, index) => Divider(
+                                    indent: lineFreeSpace,
+                                    endIndent: lineFreeSpace,
+                                    color: Colors.grey),
                                 itemBuilder: (context, index) {
                                   return Container(
                                     child: Column(
                                       children: [
                                         ListTile(
-                                          leading: Icon(Icons.person, color: Colors.blue,),
+                                          leading: Icon(
+                                            Icons.person,
+                                            color: Colors.blue,
+                                          ),
                                           title:
-                                          Text(service.coords[index].name),
+                                              Text(service.coords[index].name),
                                           subtitle: Text(
                                               GetInfo.getValueFromEnum(service
                                                   .coords[index].coordType)),
@@ -213,10 +218,8 @@ class _SearchState extends State<Search> {
                                     ),
                                   );
                                 })
-                                : Text('Não existem coordenadores'),
-
-                          ])
-                  ));
+                            : Text('Não existem coordenadores'),
+                      ])));
             },
           );
         });
