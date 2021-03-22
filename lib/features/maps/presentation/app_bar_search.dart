@@ -20,11 +20,12 @@ class _AppBarSearchState extends State<AppBarSearch> {
         actions: <Widget>[
           IconButton(
               icon: Icon(Icons.search),
-              onPressed: () async {
-                {
+             onPressed: () async {
+               {
                   final newCity =
                       await showSearch(context: context, delegate: DataSearch());
                   print(newCity);
+
                 }
               }),
         ],

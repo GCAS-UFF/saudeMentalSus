@@ -45,7 +45,7 @@ class _ShowMapState extends State<ShowMap> {
             target: (flag)
                 ? LatLng(-15.7801, -47.9292)
                 : LatLng(widget.currentPosition.latitude,
-                    widget.currentPosition.longitude),
+                widget.currentPosition.longitude),
             zoom: (flag) ? 0 : 16.0),
         zoomGesturesEnabled: true,
         markers: markers,
