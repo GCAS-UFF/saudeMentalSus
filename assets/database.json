@@ -1,0 +1,2178 @@
+[
+  {
+    "name": "Niterói",
+    "federationUnity": "RJ",
+    "servicesList": [
+      {
+        "name": "CAPS AD Alameda",
+        "type": "CAPS",
+        "phone": ["(21) 2718-5803"],
+        "email": ["capsadalameda@gmail.com"],
+        "address": {
+          "street": "Alameda São Boaventura",
+          "district": "Fonseca",
+          "houseNumber": "129",
+          "lat": -22.8811044,
+          "long": -43.0946062
+        },
+        "region": [{ "name": "ALL" }],
+        "coord": [
+          {
+            "name": "Marcela Garcia",
+            "type": "GERAL",
+            "phone": [],
+            "email": [
+              "marcelagarciapsi@yahoo.com.br",
+              "capsadalameda@gmail.com"
+            ]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS Herbert de Souza",
+        "type": "CAPS",
+        "phone": ["(21) 2722-4147"],
+        "email": ["capshebertdesouza@yahoo.com.br"],
+        "address": {
+          "street": "Rua Marquês de Olinda",
+          "district": "Centro",
+          "houseNumber": "104",
+          "lat": -22.8939738,
+          "long": -43.1145584
+        },
+        "region": [
+          { "name": "Boa Viagem" },
+          { "name": "Gragoatá" },
+          { "name": "Morro do Estado" },
+          { "name": "Centro" },
+          { "name": "Fátima" },
+          { "name": "Ponta D'areia" },
+          { "name": "Ilha da Conceição" },
+          { "name": "Barreto" },
+          { "name": "Santana" },
+          { "name": "Engenhoca" },
+          { "name": "Tenente Jardim" },
+          { "name": "Fonseca" },
+          { "name": "Cubango" },
+          { "name": "Caramujo" },
+          { "name": "Baldeador" },
+          { "name": "Santa Bárbara" },
+          { "name": "Viçoso Jardim" }
+        ],
+        "coord": [
+          {
+            "name": "Gildete Ferreira - Direção",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["ghylferr@gmail.com"]
+          },
+          {
+            "name": "Lígia Penna",
+            "type": "TECNICA",
+            "phone": [],
+            "email": ["capshebertdesouza@yahoo.com.br"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS Casa do Largo",
+        "type": "CAPS",
+        "phone": ["(21) 2616-5612"],
+        "email": [],
+        "address": {
+          "street": "Rua Nilo de Freitas",
+          "district": "Largo da Batalha",
+          "houseNumber": "41",
+          "lat": -22.9075542,
+          "long": -43.0663884
+        },
+        "region": [
+          { "name": "Ingá" },
+          { "name": "Icaraí" },
+          { "name": "Pé Pequeno" },
+          { "name": "Santa Rosa" },
+          { "name": "Vital Brasil" },
+          { "name": "São Francisco" },
+          { "name": "Charitas" },
+          { "name": "Jurujuba" },
+          { "name": "Jardim Imbuí" },
+          { "name": "Piratininga" },
+          { "name": "Camboinhas" },
+          { "name": "Itaipú" },
+          { "name": "Itacoatiara" },
+          { "name": "Engenho do Mato" },
+          { "name": "Maravista" },
+          { "name": "Serra Grande" },
+          { "name": "Santo Antônio" },
+          { "name": "Jacaré" },
+          { "name": "Cafubá" },
+          { "name": "Maceió" },
+          { "name": "Cachoeira" },
+          { "name": "Viradouro" },
+          { "name": "Itioca" },
+          { "name": "Largo da Batalha" },
+          { "name": "Sapê" },
+          { "name": "Badu" },
+          { "name": "Cantagalo" },
+          { "name": "Vila Progresso" },
+          { "name": "Matapaca" },
+          { "name": "Maria Paula" },
+          { "name": "Muriqui" },
+          { "name": "Rio do Ouro" },
+          { "name": "Várzea das Moças" }
+        ],
+        "coord": [
+          {
+            "name": "Tatiana Simões",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["capscasadolargo41@yahoo.com.br"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPSi Monteiro Lobato",
+        "type": "CAPS",
+        "phone": ["(21) 2621-6598"],
+        "email": ["capsiml2016@hotmail.com"],
+        "address": {
+          "street": "Avenida Ari Parreiras",
+          "district": "Santa Rosa",
+          "houseNumber": "649",
+          "lat": -22.9080446,
+          "long": -43.100959
+        },
+        "region": [{ "name": "ALL" }],
+        "coord": [
+          {
+            "name": "Nala Rizzo",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["nalarizzo@hotmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "Ambulatório de Saúde Mental da Policlínica Regional Sérgio Arouca",
+        "type": "AMB",
+        "phone": ["(21) 2711-2366", "(21) 2610-8975", "(21) 2710-9176"],
+        "email": ["prsa@saude.niteroi.rj.gov"],
+        "address": {
+          "street": "Pça. Vital Brasil, s/nº - Vital Brasil - CEP: 24.230-265",
+          "district": "Santa Rosa",
+          "houseNumber": "",
+          "lat": -22.9080446,
+          "long": -43.100959
+        },
+        "region": [{ "name": "Santa Rosa" }],
+        "coord": [],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "Ambulatório Saúde Mental da Policlínica Regional Dr. João da Silva Vizela",
+        "type": "AMB",
+        "phone": ["(21) 2719-0141"],
+        "email": ["ubsbarreto@saude.niteroi.rj.gov.br"],
+        "address": {
+          "street": "Rua Presidente Craveiro Lopes",
+          "district": "Barreto",
+          "houseNumber": "726",
+          "lat": -22.9080446,
+          "long": -43.100959
+        },
+        "region": [{ "name": "Barreto" }],
+        "coord": [],
+        "reception": [
+          { "openingHour": "07:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "07:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "07:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "07:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "07:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "Ambulatório de Saúde Mental da Policlínica Regional Dr. Guilherme Taylor March",
+        "type": "AMB",
+        "phone": ["(21) 2626-4170"],
+        "email": ["prgmarch@saude.niteroi.rj.gov.br"],
+        "address": {
+          "street": "Rua Desembargador Lima Castro",
+          "district": "Fonseca",
+          "houseNumber": "238",
+          "lat": -22.9080446,
+          "long": -43.100959
+        },
+        "region": [{ "name": "Fonseca" }],
+        "coord": [],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "Ambulatório de Saúde Mental da Policlínica Regional Carlos Antônio da Silva",
+        "type": "AMB",
+        "phone": ["(21) 2719-0050", "(21) 2717-1426", "(21) 9118-7505"],
+        "email": ["prcas@saude.niteroi.rj.gov.br"],
+        "address": {
+          "street": "Av. Jansen de Melo",
+          "district": "São Lourenço",
+          "houseNumber": "",
+          "lat": -22.9080446,
+          "long": -43.100959
+        },
+        "region": [{ "name": "Fonseca" }],
+        "coord": [],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "Ambulatório de Saúde Mental da Policlínica Regional do Largo da Batalha",
+        "type": "AMB",
+        "phone": ["(21) 2616-1456"],
+        "email": ["prlbatalha@saude.niteroi.rj.gov.br"],
+        "address": {
+          "street": "Rua Ver. Armando Ferreira",
+          "district": "Largo da Batalha",
+          "houseNumber": "30",
+          "lat": -22.9080446,
+          "long": -43.100959
+        },
+        "region": [{ "name": "Largo da Batalha" }],
+        "coord": [],
+        "reception": [
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 2 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 3 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 4 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 5 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 6 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 7 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 1 }
+        ]
+      },
+      {
+        "name": "Hospital Psiquiátrico de Jurujuba",
+        "type": "AMB",
+        "phone": ["(21) 2714-8856"],
+        "email": [
+          "direcao.hpj@saude.niteroi.rj.gov.br\n",
+          "admin.hpj@saude.niteroi.rj.gov.br"
+        ],
+        "address": {
+          "street": "Avenida Quintino Bocaiuva",
+          "district": "Charitas",
+          "houseNumber": "",
+          "lat": -22.9080446,
+          "long": -43.100959
+        },
+        "region": [{ "name": "Charitas" }],
+        "coord": [],
+        "reception": [
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 2 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 3 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 4 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 5 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 6 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 7 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 1 }
+        ]
+      },
+      {
+        "name": "Ambulatório de Saúde Mental de Policlínica Regional de Piratininga",
+        "type": "AMB",
+        "phone": ["(21) 3701-8110"],
+        "email": [],
+        "address": {
+          "street": "Rua Marcolino Gomes Candau",
+          "district": "Piratininga",
+          "houseNumber": "11",
+          "lat": -22.9080446,
+          "long": -43.100959
+        },
+        "region": [{ "name": "Piratininga" }],
+        "coord": [],
+        "reception": [
+          { "openingHour": "07:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "07:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "07:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "07:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "07:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "São Gonçalo",
+    "federationUnity": "RJ",
+    "servicesList": [
+      {
+        "name": "CAPS II - Paulo M Costa",
+        "type": "CAPS",
+        "phone": ["(21) 2725-5512", "(21) 3856-1390", "(21) 3856-2472"],
+        "email": ["caps.paulomarcoscosta@hotmail.com"],
+        "address": {
+          "street": "Rua Ladislau de Andrade",
+          "district": "Mutondo",
+          "houseNumber": "44",
+          "lat": -22.81891,
+          "long": -43.01402
+        },
+        "region": [
+          { "name": "Luiz Caçador" },
+          { "name": "Trindade" },
+          { "name": "Nova Cidade" },
+          { "name": "Mutondo" },
+          { "name": "Morro da Chumbada" },
+          { "name": "Colubandê" },
+          { "name": "Coelho" },
+          { "name": "Bandeirantes" },
+          { "name": "Lagoinha" },
+          { "name": "Pacheco" },
+          { "name": "Miriambi" },
+          { "name": "Jardim Alcântara" },
+          { "name": "Amendoeira" },
+          { "name": "Jardim Catarina" },
+          { "name": "Vila Três" },
+          { "name": "Santa Luzia" },
+          { "name": "Bom Retiro" },
+          { "name": "Guaxindiba" },
+          { "name": "Laranjal" },
+          { "name": "Largo da Ideia" },
+          { "name": "Marambaia" },
+          { "name": "Monjolos" },
+          { "name": "Jardim Bom Retiro" },
+          { "name": "Arsenal" },
+          { "name": "Engenho do Roçado" },
+          { "name": "Arrastão" },
+          { "name": "Jóckey" },
+          { "name": "Tribobó" },
+          { "name": "Novo México" },
+          { "name": "Maria Paula" },
+          { "name": "Almerinda" },
+          { "name": "Sacramento" },
+          { "name": "Vila Candoza" },
+          { "name": "Ipitíba" },
+          { "name": "Quinta Dom Ricardo" },
+          { "name": "Santa Izabel" },
+          { "name": "Raul Veiga" },
+          { "name": "Capote" },
+          { "name": "Meia Noite" }
+        ],
+        "coord": [
+          {
+            "name": "Maribel Silva de Andrade",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["maribel.andrade@oi.com.br"]
+          },
+          {
+            "name": "Tahiana Monteiro",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPSi - Zé Garoto",
+        "type": "CAPS",
+        "phone": ["(21) 2605-1909"],
+        "email": ["capsizegaroto@outlook.com"],
+        "address": {
+          "street": "Rua Vereador Clemente Souza e Silva ",
+          "district": "Zé Garoto",
+          "houseNumber": "222",
+          "lat": -22.831389,
+          "long": -43.057225
+        },
+        "region": [
+          { "name": "Mutuapira" },
+          { "name": "Mutuá" },
+          { "name": "Mutuaguaçu" },
+          { "name": "Itaoca" },
+          { "name": "Boaçu" },
+          { "name": "Boa Vista" },
+          { "name": "Rosane" },
+          { "name": "São Miguel" },
+          { "name": "Antonina" },
+          { "name": "Portão do Rosa" },
+          { "name": "Fazenda dos Mineiros" },
+          { "name": "Salgueiro" },
+          { "name": "Itaúna" },
+          { "name": "Palmeiras" },
+          { "name": "Barro Vermelho" },
+          { "name": "Brasilândia" },
+          { "name": "Gradim" },
+          { "name": "Morro do Castro" },
+          { "name": "Neves" },
+          { "name": "Porto Novo" },
+          { "name": "Santa Catarina" },
+          { "name": "Tenente Jardim" },
+          { "name": "Venda da Cruz" },
+          { "name": "Vila Lage" },
+          { "name": "Paiva" },
+          { "name": "Porto da Madama" },
+          { "name": "Água Mineral" },
+          { "name": "Engenho Pequeno" },
+          { "name": "Estrela do Norte" },
+          { "name": "Galo Branco" },
+          { "name": "Lindo Parque" },
+          { "name": "Zé Garoto" },
+          { "name": "Porto da Pedra" },
+          { "name": "Rocha" }
+        ],
+        "coord": [
+          {
+            "name": "Maria de Fátima Graneiro",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["fatimagraneiro@hotmail.com"]
+          },
+          {
+            "name": "Vera Lúcia Menezes",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II - Porto da Madama",
+        "type": "CAPS",
+        "phone": ["(21) 3856-0126"],
+        "email": ["capsportodamadama@hotmail.com"],
+        "address": {
+          "street": "Rua General Antônio Rodrigues ",
+          "district": "Centro",
+          "houseNumber": "250",
+          "lat": -22.822862,
+          "long": -43.041072
+        },
+        "region": [
+          { "name": "Mutuapira" },
+          { "name": "Mutuá" },
+          { "name": "Mutuaguaçu" },
+          { "name": "Itaoca" },
+          { "name": "Boa Vista" },
+          { "name": "Rosane" },
+          { "name": "São Miguel" },
+          { "name": "Antonina" },
+          { "name": "Portão do Rosa" },
+          { "name": "Fazenda dos Mineiros" },
+          { "name": "Salgueiro" },
+          { "name": "Itaúna" },
+          { "name": "Palmeiras" },
+          { "name": "Barro Vermelho" },
+          { "name": "Brasilândia" },
+          { "name": "Gradim" },
+          { "name": "Morro do Castro" },
+          { "name": "Neves" },
+          { "name": "Porto Novo" },
+          { "name": "Santa Catarina" },
+          { "name": "Tenente Jardim" },
+          { "name": "Venda da Cruz" },
+          { "name": "Vila Lage" },
+          { "name": "Paiva" },
+          { "name": "Porto da Madama" },
+          { "name": "Água Mineral" },
+          { "name": "Engenho Pequeno" },
+          { "name": "Estrela do Norte" },
+          { "name": "Galo Branco" },
+          { "name": "Lindo Parque" },
+          { "name": "Zé Garoto" },
+          { "name": "Porto da Pedra" },
+          { "name": "Rocha" }
+        ],
+        "coord": [
+          {
+            "name": "Jane Cristina Barbosa",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          },
+          {
+            "name": "Adriana Leckar Granja",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPSad ",
+        "type": "CAPS",
+        "phone": ["(21) 3705-1554", "(21) 3705-1556"],
+        "email": ["capsadsg@hotmail.com"],
+        "address": {
+          "street": "Rua Coronel Serrado",
+          "district": "Zé Garoto",
+          "houseNumber": "1543",
+          "lat": -22.829871,
+          "long": -43.057297
+        },
+        "region": [
+          { "name": "Mutuapira" },
+          { "name": "Mutuá" },
+          { "name": "Mutuaguaçu" },
+          { "name": "Itaoca" },
+          { "name": "Boaçu" },
+          { "name": "Boa Vista" },
+          { "name": "Rosane" },
+          { "name": "São Miguel" },
+          { "name": "Antonina" },
+          { "name": "Portão do Rosa" },
+          { "name": "Fazenda dos Mineiros" },
+          { "name": "Salgueiro" },
+          { "name": "Itaúna" },
+          { "name": "Palmeiras" },
+          { "name": "Barro Vermelho" },
+          { "name": "Brasilândia" },
+          { "name": "Gradim" },
+          { "name": "Morro do Castro" },
+          { "name": "Neves" },
+          { "name": "Porto Novo" },
+          { "name": "Santa Catarina" },
+          { "name": "Tenente Jardim" },
+          { "name": "Venda da Cruz" },
+          { "name": "VIla Lage" },
+          { "name": "Paiva" },
+          { "name": "Porto da Madama" },
+          { "name": "Água Mineral" },
+          { "name": "Engenho Pequeno" },
+          { "name": "Estrela do Norte" },
+          { "name": "Galo Branco" },
+          { "name": "Lindo Parque" },
+          { "name": "Zé Garoto" },
+          { "name": "Porto da Pedra" },
+          { "name": "Rocha" }
+        ],
+        "coord": [
+          {
+            "name": "Aparecida Lobosco",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["cidalobosco@yahoo.com.br"]
+          },
+          {
+            "name": "Kassia Rapella",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rio de Janeiro",
+    "federationUnity": "RJ",
+    "servicesList": [
+      {
+        "name": "CAPS III - João Ferreira Silva Filho",
+        "type": "CAPS",
+        "phone": ["(21) 2270-8688", "(21) 99697-0543"],
+        "email": ["capsIIIjoaoferreira@gmail.com"],
+        "address": {
+          "street": "Rua Engenheiro Manoel Segurado",
+          "district": "Complexo do Alemão",
+          "houseNumber": "S/N",
+          "lat": -22.864057,
+          "long": -43.268351
+        },
+        "region": [{ "name": "Complexo do Alemão" }],
+        "coord": [
+          {
+            "name": "Márcia Bezerra",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 1 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 2 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 3 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 4 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 5 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 6 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 7 }
+        ]
+      },
+      {
+        "name": "CAPSad - Centro-Rio",
+        "type": "CAPS",
+        "phone": ["(21) 2334-8109", "(21) 2334-8108"],
+        "email": ["capsad.centrario@saude.rj.gov.br"],
+        "address": {
+          "street": "Rua Dona Mariana",
+          "district": "Botafogo",
+          "houseNumber": "151",
+          "lat": -22.954299,
+          "long": -43.187879
+        },
+        "region": [{ "name": "parte da Zona Sul" }],
+        "coord": [
+          {
+            "name": "Márcio Barbeito",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 1 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 2 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 3 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 4 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 5 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 6 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 7 }
+        ]
+      },
+      {
+        "name": "CAPSad - Mané Garrincha",
+        "type": "CAPS",
+        "phone": ["(21) 2284-6860", "(21) 2284-6339"],
+        "email": ["capsadmanegarrincha@gmail.com"],
+        "address": {
+          "street": "Rua Professor Manoel de Abreu",
+          "district": "Maracanã",
+          "houseNumber": "196",
+          "lat": -22.914011,
+          "long": -43.234364
+        },
+        "region": [
+          { "name": "Tijuca" },
+          { "name": "Alto da Boa Vista" },
+          { "name": "Andaraí" },
+          { "name": "Grajaú" },
+          { "name": "Vila Isabel" },
+          { "name": "Maracanã" },
+          { "name": "Praça da Bandeira" },
+          { "name": "Rio Comprido" },
+          { "name": "Cosme Velho" }
+        ],
+        "coord": [
+          {
+            "name": "Roberta Mercadante",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPSad - Júlio César de Carvalho",
+        "type": "CAPS",
+        "phone": ["(21) 3156-9277"],
+        "email": ["capsad5.3@gmail.com"],
+        "address": {
+          "street": "Rua Severino das Chagas",
+          "district": "Santa Cruz",
+          "houseNumber": "196",
+          "lat": -22.915411,
+          "long": -43.679954
+        },
+        "region": [{ "name": " Santa Cruz" }],
+        "coord": [
+          { "name": "Tereza Campos", "type": "GERAL", "phone": [], "email": [] }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPSad III - Antônio Carlos Mussum",
+        "type": "CAPS",
+        "phone": ["(21) 3889-8441", "(21) 3523-8546"],
+        "email": ["capsad_acm@hotmail.com"],
+        "address": {
+          "street": "Rua Sampaio Corrêa",
+          "district": "Taquara",
+          "houseNumber": "103",
+          "lat": -22.935822,
+          "long": -43.387947
+        },
+        "region": [{ "name": "Barra da Tijuca" }, { "name": "Jacarepaguá" }],
+        "coord": [
+          {
+            "name": "Rogério da Silva",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["rogerio_30ferreira@yahoo.com.br"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 1 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 2 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 3 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 4 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 5 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 6 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 7 }
+        ]
+      },
+      {
+        "name": "CAPSad III - Raul Seixas",
+        "type": "CAPS",
+        "phone": ["(21) 3111-7512", "(21) 3111-7507", "(21) 3111-7149"],
+        "email": ["jucaramore@gmail.com"],
+        "address": {
+          "street": "R. Dois de Fevereiro",
+          "district": "Encantado",
+          "houseNumber": "785",
+          "lat": -22.9006465,
+          "long": -43.3021882
+        },
+        "region": [
+          { "name": "Méier" },
+          { "name": "Lins de Vasconcelos" },
+          { "name": "Engenho Novo" },
+          { "name": "Engenho de Dentro" },
+          { "name": "Todos os Santos" },
+          { "name": "Cachambi" },
+          { "name": "Jacaré" }
+        ],
+        "coord": [
+          {
+            "name": "Juliana Caramore",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 1 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 2 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 3 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 4 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 5 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 6 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 7 }
+        ]
+      },
+      {
+        "name": "CAPSad III - Miriam Makeba",
+        "type": "CAPS",
+        "phone": ["(21) 3889-8441"],
+        "email": ["capsmiriammakeba@vivario.org.br"],
+        "address": {
+          "street": "Rua Professor Lacé",
+          "district": "Ramos",
+          "houseNumber": "485",
+          "lat": -22.8563297,
+          "long": -43.2636712
+        },
+        "region": [
+          { "name": "Boncucesso" },
+          { "name": "Ramos" },
+          { "name": "Maré" }
+        ],
+        "coord": [
+          {
+            "name": "Rodrigo Pereira",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 1 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 2 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 3 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 4 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 5 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 6 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 7 }
+        ]
+      },
+      {
+        "name": "CAPSad III - Paulo Portela",
+        "type": "CAPS",
+        "phone": ["(21) 2452-2130", "(21) 99505-3845"],
+        "email": ["capsad3.pportela@gmail.com"],
+        "address": {
+          "street": "Rua Pirapora",
+          "district": "Madureira",
+          "houseNumber": "69",
+          "lat": -22.866534,
+          "long": -43.344643
+        },
+        "region": [
+          { "name": "Madureira" },
+          { "name": "Vaz Lobo" },
+          { "name": "Turiaçu" },
+          { "name": "Oswaldo Cruz" },
+          { "name": "Campinho" },
+          { "name": "Cascadura" },
+          { "name": "Engenheiro Leal" },
+          { "name": "Cavalcanti" }
+        ],
+        "coord": [
+          {
+            "name": "Claudia Gomes de Paula",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["claudia1964.paula@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 1 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 2 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 3 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 4 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 5 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 6 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 7 }
+        ]
+      },
+      {
+        "name": "CAPS II - Pedro Pellegrino",
+        "type": "CAPS",
+        "phone": ["(21) 3394-2583", "(21) 2419-0669"],
+        "email": ["capsppellegrino@gmail.com"],
+        "address": {
+          "street": "Praça Major Vieira de Melo ",
+          "district": "Campo Grande",
+          "houseNumber": "13",
+          "lat": -22.9185589,
+          "long": -43.558654
+        },
+        "region": [
+          { "name": "Santíssimo" },
+          { "name": "Campo Grande" },
+          { "name": "Guaratiba" }
+        ],
+        "coord": [
+          {
+            "name": "Aline de Alvarenga Coelho",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["alinestarkey@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II - Profeta Gentileza",
+        "type": "CAPS",
+        "phone": ["(21) 3402-6835", "(21) 3155-7057"],
+        "email": ["capsgentileza@rio.rj.gov.br"],
+        "address": {
+          "street": "Estrada de Inhoaíba",
+          "district": "Inhoaíba",
+          "houseNumber": "849",
+          "lat": -22.8999276,
+          "long": -43.5950889
+        },
+        "region": [{ "name": "Inhoaíba" }, { "name": "Campo Grande" }],
+        "coord": [
+          {
+            "name": "Marcelo Miranda",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["marceloa.miranda@smsdc.rio.rj.gov.br"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II - Simão Bacamarte",
+        "type": "CAPS",
+        "phone": ["(21) 3365-8775", "(21) 3395-0898"],
+        "email": ["capssbacamarte@rio.rj.gov.br"],
+        "address": {
+          "street": "Avenida Senador Camará",
+          "district": "Santa Cruz",
+          "houseNumber": "224",
+          "lat": -22.9140463,
+          "long": -43.6862373
+        },
+        "region": [
+          { "name": "Santa Cruz" },
+          { "name": "Paciência" },
+          { "name": "Sepetiba" }
+        ],
+        "coord": [
+          {
+            "name": "Ana Paula Figueiredo",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["anaofigueiredo@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II - Ernesto Nazareth",
+        "type": "CAPS",
+        "phone": ["(21) 3367-5145"],
+        "email": ["capsenilha@gmail.com"],
+        "address": {
+          "street": "Avenida Paranapuã",
+          "district": "Freguesia (Ilha do Governador)",
+          "houseNumber": "435",
+          "lat": -22.795281,
+          "long": -43.177822
+        },
+        "region": [{ "name": "Ilha do Governador" }],
+        "coord": [
+          {
+            "name": "Francileuda Bruguer",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["francimmb@uol.com.br"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II - Fernando Diniz",
+        "type": "CT",
+        "phone": ["(21) 3867-1319", "(21) 2590-3892"],
+        "email": ["capsfdiniz@gmail.com"],
+        "address": {
+          "street": "Rua Filomena Nunes",
+          "district": "Olaria",
+          "houseNumber": " 229",
+          "lat": -22.8408284,
+          "long": -43.2633944
+        },
+        "region": [
+          { "name": "Olaria" },
+          { "name": "Ramos" },
+          { "name": "Bonsucesso" }
+        ],
+        "coord": [
+          {
+            "name": "André Félix de Souza",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["carla.cpaesleme@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II - Lima Barreto",
+        "type": "CAPS",
+        "phone": ["(21) 3462-5449", "(21) 3331-8500"],
+        "email": ["capslbarreto@gmail.com"],
+        "address": {
+          "street": "Avenida Ribeiro Dantas",
+          "district": "Bangu",
+          "houseNumber": "571",
+          "lat": -22.8721747,
+          "long": -43.4584986
+        },
+        "region": [{ "name": "Bangu" }, { "name": "Padre Miguel" }],
+        "coord": [
+          { "name": "Paulo Antônio", "type": "GERAL", "phone": [], "email": [] }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II - Clarice Lispector",
+        "type": "CAPS",
+        "phone": ["(21) 3111-7490", "(21) 3111-7411", "(21) 3111-7489"],
+        "email": [],
+        "address": {
+          "street": "Rua Dois de Fevereiro",
+          "district": "Encantado",
+          "houseNumber": "785A",
+          "lat": -22.9006465,
+          "long": -43.3021882
+        },
+        "region": [
+          { "name": "Méier" },
+          { "name": "Lins de Vasconcelos" },
+          { "name": "Engenho Novo" },
+          { "name": "Engenho de Dentro" },
+          { "name": "Todos os Santos" },
+          { "name": "Cachambi" },
+          { "name": "Jacaré" }
+        ],
+        "coord": [
+          {
+            "name": "Danielle Queiroz",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["daniellequeiroz13@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II - UERJ",
+        "type": "CAPS",
+        "phone": ["(21) 2334-2371", "(21) 2334-2372"],
+        "email": ["capsuerj2.2@gmail.com"],
+        "address": {
+          "street": "Avenida Marechal Rondon",
+          "district": "São Francisco Xavier",
+          "houseNumber": "381",
+          "lat": -16.4754353,
+          "long": -54.6336668
+        },
+        "region": [
+          { "name": "Tijuca" },
+          { "name": "Alto da Boa Vista" },
+          { "name": "Andaraí" },
+          { "name": "Grajaú" },
+          { "name": "Vila Isabel" },
+          { "name": "Maracanã" },
+          { "name": "Praça da Bandeira" },
+          { "name": "Rio Comprido" },
+          { "name": "Cosme Velho" }
+        ],
+        "coord": [
+          {
+            "name": "Neilanza Micas",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["neilanzacoe@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II - Torquato Neto",
+        "type": "CAPS",
+        "phone": ["(21) 3111-6720"],
+        "email": ["capstn@gmail.com"],
+        "address": {
+          "street": "Rua Honório",
+          "district": "Todos os Santos",
+          "houseNumber": "461",
+          "lat": -22.8884662,
+          "long": -43.2774827
+        },
+        "region": [
+          { "name": "Abolição" },
+          { "name": "Pilares" },
+          { "name": "Engenho da Rainha" },
+          { "name": "Tomás Coelho" },
+          { "name": "Todos os Santos" },
+          { "name": "Higienópolis" },
+          { "name": "Jacarezinho" }
+        ],
+        "coord": [
+          {
+            "name": "Ana Paula B. Guedes",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["apbguedes@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II - Neusa Santos Souza",
+        "type": "CAPS",
+        "phone": ["(21) 3523-8640", "(21) 97483-1716"],
+        "email": ["capsneusass@gmail.com"],
+        "address": {
+          "street": "Rua Baalbeck ",
+          "district": "Senador Camará",
+          "houseNumber": "75",
+          "lat": -22.8808778,
+          "long": -43.4928569
+        },
+        "region": [
+          { "name": "Sulacap" },
+          { "name": "Senador Camará" },
+          { "name": "Deodoro" },
+          { "name": "Magalhães Bastos" }
+        ],
+        "coord": [
+          {
+            "name": "Matheus Dias",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["psicomatheus@bol.com.br"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II - Manoel de Barros",
+        "type": "CAPS",
+        "phone": ["(21) 98875-5977", "(21) 3412-8219"],
+        "email": [],
+        "address": {
+          "street": "Avenida Sampaio Correa",
+          "district": "Taquara",
+          "houseNumber": "s/nº",
+          "lat": -22.9376933,
+          "long": -43.3933426
+        },
+        "region": [
+          { "name": "Barra" },
+          { "name": "Recreio" },
+          { "name": "Vargem Grande" },
+          { "name": "Vargem Pequena" },
+          { "name": "Curicica" },
+          { "name": "Camorim" }
+        ],
+        "coord": [
+          {
+            "name": "Catarine Venas",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["catarinevenas@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II - Carlos Augusto da Silva (Magal)",
+        "type": "CAPS",
+        "phone": ["(21) 3884-9635", "(21) 97002-1427"],
+        "email": [],
+        "address": {
+          "street": "Avenida Dom Helder Câmara",
+          "district": "Manguinhos",
+          "houseNumber": "1390 - fundos",
+          "lat": -22.8870843,
+          "long": -43.2811066
+        },
+        "region": [
+          { "name": "Manguinhos" },
+          { "name": "Maré" },
+          { "name": "Benfica" },
+          { "name": "Tuiuti" }
+        ],
+        "coord": [
+          {
+            "name": "Cristiane Sampaio",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["chrisampayo@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS III - Dircinha e Linda Batista",
+        "type": "CAPS",
+        "phone": ["(21) 2475-4917", "(21) 2458-4613"],
+        "email": [],
+        "address": {
+          "street": "Rua Jornalista Hermano Requião",
+          "district": "Guadalupe",
+          "houseNumber": "447",
+          "lat": -22.8480298,
+          "long": -43.3773093
+        },
+        "region": [
+          { "name": "Guadalupe" },
+          { "name": "Anchieta" },
+          { "name": "Oswaldo Cruz" },
+          { "name": "Madureira" },
+          { "name": "Turiaçu" },
+          { "name": "Rocha Miranda" },
+          { "name": "Bento Ribeiro" },
+          { "name": "Campinho" }
+        ],
+        "coord": [
+          {
+            "name": "Deise Machado",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["dmdalmeida@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS III - Arthur Bispo do Rosário",
+        "type": "CAPS",
+        "phone": ["(21) 3412-5608", "(21) 3341-5608"],
+        "email": ["capsbrosario@rio.rj.gov.br"],
+        "address": {
+          "street": "Estrada Rodrigues Caldas",
+          "district": "Jacarepaguá",
+          "houseNumber": "3900",
+          "lat": -22.9241673,
+          "long": -43.3853667
+        },
+        "region": [{ "name": "Jacarepaguá " }],
+        "coord": [
+          { "name": "Não há", "type": "GERAL", "phone": [], "email": [] }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS III - Franco Basaglia",
+        "type": "CAPS",
+        "phone": ["(21) 2542-6761"],
+        "email": ["capsfrancobasaglia@vivario.org.br"],
+        "address": {
+          "street": "Avenida Venceslau Brás",
+          "district": "Botafogo",
+          "houseNumber": "65",
+          "lat": -22.954324,
+          "long": -43.177406
+        },
+        "region": [
+          { "name": "Glória" },
+          { "name": "Catete" },
+          { "name": "Laranjeiras" },
+          { "name": "Cosme Velho" },
+          { "name": "Botafogo" },
+          { "name": "Urca" },
+          { "name": "Huamitá" },
+          { "name": "Copacabana" },
+          { "name": "Leme" }
+        ],
+        "coord": [
+          { "name": "Eliza Picoli", "type": "GERAL", "phone": [], "email": [] }
+        ],
+        "reception": [
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 1 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 2 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 3 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 4 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 5 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 6 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 7 }
+        ]
+      },
+      {
+        "name": "CAPS II Rubens Corrêa",
+        "type": "CAPS",
+        "phone": ["(21) 3383-3340"],
+        "email": ["fpboabaid@gmail.com"],
+        "address": {
+          "street": "Rua Capitão Aliatar Martins (área de atend. AP 3.3)",
+          "district": " Irajá ",
+          "houseNumber": "231 ",
+          "lat": -22.8393573,
+          "long": -43.3197612
+        },
+        "region": [
+          { "name": "Irajá" },
+          { "name": "Madureira" },
+          { "name": "Vila da Penha" },
+          { "name": "Vila Cosmos" },
+          { "name": "Vicente de Carvalho" },
+          { "name": "Penha Circular" },
+          { "name": "Brás de Pina" }
+        ],
+        "coord": [
+          {
+            "name": "Fernanda Pastu",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["fpboabaid@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Queimados",
+    "federationUnity": "RJ",
+    "servicesList": [
+      {
+        "name": "Centro de Atenção Psicossocial Infanto Juvenil ",
+        "type": "CAPS",
+        "phone": ["(21) 2665-1238"],
+        "email": ["capsiqueimados@gmail.com"],
+        "address": {
+          "street": "Rua Julio Kengen",
+          "district": "Queimados",
+          "houseNumber": "14",
+          "lat": -22.721179,
+          "long": -43.465331
+        },
+        "region": [{ "name": "Queimados" }],
+        "coord": [
+          {
+            "name": "Sem informaçoes ",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "Centro de Atenção Psicossocial II",
+        "type": "CAPS",
+        "phone": ["(21) 2665-1799"],
+        "email": ["capsqueimados@gmail.com"],
+        "address": {
+          "street": "Travessa Marquês",
+          "district": "Vila Sao Roque, Queimados",
+          "houseNumber": " 195",
+          "lat": -22.715706,
+          "long": -43.559501
+        },
+        "region": [{ "name": "Queimados" }],
+        "coord": [
+          {
+            "name": "Sem informações",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nova Iguaçu",
+    "federationUnity": "RJ",
+    "servicesList": [
+      {
+        "name": "CAPS III - Dr. Jayr Nogueira",
+        "type": "CAPS",
+        "phone": ["(21) 2667-3674"],
+        "email": [],
+        "address": {
+          "street": "R. Floresta Miranda",
+          "district": "Centro, Nova Iguaçu",
+          "houseNumber": "113",
+          "lat": -22.762745,
+          "long": -43.448208
+        },
+        "region": [{ "name": "Nova Iguaçu" }],
+        "coord": [
+          {
+            "name": " João Muller S. Maia",
+            "type": "TECNICA",
+            "phone": [],
+            "email": ["mullermaia@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 1 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 2 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 3 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 4 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 5 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 6 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 7 }
+        ]
+      },
+      {
+        "name": "CAPSi Dom Adriano Hipólito",
+        "type": "CAPS",
+        "phone": ["(21) 3773-7843"],
+        "email": ["capsi.semusni@gmail.com"],
+        "address": {
+          "street": "Rua Humberto de Campos",
+          "district": "Bairro da Luz",
+          "houseNumber": " 113",
+          "lat": -22.757566,
+          "long": -43.462777
+        },
+        "region": [{ "name": "Nova Iguaçu" }],
+        "coord": [
+          { "name": "Ana Pessoa", "type": "TECNICA", "phone": [], "email": [] }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPSad Vanderley Marins",
+        "type": "CAPS",
+        "phone": ["(21) 2668-5041"],
+        "email": ["capsadvanderleimarins@gmail.com"],
+        "address": {
+          "street": " Rua Mirim",
+          "district": " Austin",
+          "houseNumber": "88",
+          "lat": -22.752219,
+          "long": -43.441766
+        },
+        "region": [{ "name": "Nova Iguaçu" }],
+        "coord": [
+          {
+            "name": "Bernadete Carvalho",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["bernacapsad@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nilópolis",
+    "federationUnity": "RJ",
+    "servicesList": [
+      {
+        "name": "CAPS II - Espaço Vivo",
+        "type": "CAPS",
+        "phone": ["(21) 3762-7394"],
+        "email": ["capsnilopolis@ig.com.br"],
+        "address": {
+          "street": "R. Senador Fernando Mendes",
+          "district": "Olinda, Nilópolis",
+          "houseNumber": "1288",
+          "lat": -22.809116,
+          "long": -43.412333
+        },
+        "region": [{ "name": "Nilópolis" }],
+        "coord": [{ "name": " - ", "type": "GERAL", "phone": [], "email": [] }],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "Centro de Atenção Psicossocial Álcool e Drogas - Novos Tempos",
+        "type": "CAPS",
+        "phone": ["(21) 3760-7114"],
+        "email": ["capsadnovostempos@hotmail.com"],
+        "address": {
+          "street": "Av. Mirandela",
+          "district": "Nilópolis",
+          "houseNumber": "508",
+          "lat": -22.810139,
+          "long": -43.420828
+        },
+        "region": [{ "name": "Nilopólis" }],
+        "coord": [
+          {
+            "name": "Ádela Severina C S Alves",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["adelamim@hotmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mesquita",
+    "federationUnity": "RJ",
+    "servicesList": [
+      {
+        "name": "CAPS III Casa Azul",
+        "type": "CAPS",
+        "phone": ["(21) 2696-1959"],
+        "email": [],
+        "address": {
+          "street": "Tenente Aldir Soares Adriano",
+          "district": "Centro ",
+          "houseNumber": "109",
+          "lat": -22.775874,
+          "long": -43.429889
+        },
+        "region": [{ "name": "Mesquita" }],
+        "coord": [
+          { "name": "Karla Fonseca", "type": "GERAL", "phone": [], "email": [] }
+        ],
+        "reception": [
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 1 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 2 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 3 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 4 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 5 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 6 },
+          { "openingHour": "00:00", "closingHour": "23:59", "weekDay": 7 }
+        ]
+      },
+      {
+        "name": "CAPS Álcool e Drogas",
+        "type": "CAPS",
+        "phone": ["(21) 2697-2717"],
+        "email": [],
+        "address": {
+          "street": "R. Egidio",
+          "district": "Centro; Vila Emil",
+          "houseNumber": "786",
+          "lat": -22.7847998,
+          "long": -43.4233423
+        },
+        "region": [{ "name": "Mesquita" }],
+        "coord": [
+          {
+            "name": "Davi Nazareno Silva",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Magé",
+    "federationUnity": "RJ",
+    "servicesList": [
+      {
+        "name": "CENTRO DE ATENCAO PSICOSSOCIAL LIDIA MENEZES",
+        "type": "CAPS",
+        "phone": ["(21) 2633-3110"],
+        "email": ["saudementalmage-rj@hotmail.com"],
+        "address": {
+          "street": "R. Trovador Luiz Otávio",
+          "district": "Flexeiras",
+          "houseNumber": "137",
+          "lat": -22.657624,
+          "long": -43.046826
+        },
+        "region": [{ "name": "Magé" }],
+        "coord": [
+          {
+            "name": "Débora Mascarenhas",
+            "type": "GERAL",
+            "phone": ["(21) 99190-7932"],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "Centro de Atenção Psicossocial Alcool e Drogas",
+        "type": "CAPS",
+        "phone": ["(21) 98805-2207"],
+        "email": ["caps_ad@yahoo.com.br"],
+        "address": {
+          "street": "R. João Martins",
+          "district": "BNH; Vila Esperanca",
+          "houseNumber": "232",
+          "lat": -22.661235,
+          "long": -43.0458
+        },
+        "region": [{ "name": "Magé " }],
+        "coord": [
+          {
+            "name": "Michele Medeiros",
+            "type": "GERAL",
+            "phone": ["(21) 98805-2207 "],
+            "email": ["apmagela@icold.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "Caps Infantojuvenil  ",
+        "type": "CAPS",
+        "phone": ["(21) 98588-9662"],
+        "email": ["saudementalmage-rj@hotmail.com"],
+        "address": {
+          "street": "R. Itaguai",
+          "district": "Flexeiras",
+          "houseNumber": "130 ",
+          "lat": -22.656108,
+          "long": -43.043562
+        },
+        "region": [{ "name": "magé" }],
+        "coord": [
+          {
+            "name": "Isabela Motta Soares",
+            "type": "GERAL",
+            "phone": ["(21) 98608-4344"],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS Álcool e Drogas III",
+        "type": "CAPS",
+        "phone": ["(21) 99152-3686"],
+        "email": [],
+        "address": {
+          "street": "R. Amazonas",
+          "district": " Piabetá",
+          "houseNumber": "591 ",
+          "lat": -22.60649,
+          "long": -43.17063
+        },
+        "region": [{ "name": "Piabetá" }],
+        "coord": [
+          {
+            "name": "Felipe Paula Amorim",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["felippesocial@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Japeri",
+    "federationUnity": "RJ",
+    "servicesList": [
+      {
+        "name": "CAPS II - Dr. Jorge Rejame",
+        "type": "CAPS",
+        "phone": ["(21) 2670-1168", "(21) 2670-5312"],
+        "email": ["caps.japeri@gmail.com"],
+        "address": {
+          "street": "Avenida Dr. Arruda Negreiros",
+          "district": "Centro",
+          "houseNumber": "49",
+          "lat": -22.645009,
+          "long": -43.654715
+        },
+        "region": [{ "name": "Japeri" }],
+        "coord": [
+          {
+            "name": "Jânio Cavalcante Ribeiro",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Itaguaí",
+    "federationUnity": "RJ",
+    "servicesList": [
+      {
+        "name": "CAPS II - Bem Viver",
+        "type": "CAPS",
+        "phone": ["(21) 3781-0508", "(21) 2688-6052"],
+        "email": ["capsbemviver@itaguai.rj.gov.br"],
+        "address": {
+          "street": "Luiz Pierre",
+          "district": "Centro",
+          "houseNumber": "61",
+          "lat": -22.871951,
+          "long": -43.771299
+        },
+        "region": [{ "name": "Itaguaí" }],
+        "coord": [
+          {
+            "name": "Luciano Rodrigues",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPSad - Viva Vida",
+        "type": "CAPS",
+        "phone": ["(21) 3782-9000 R 5004", "(21) 2688-7749"],
+        "email": [],
+        "address": {
+          "street": "Haraldo Heidindg",
+          "district": "São Francisco",
+          "houseNumber": "131",
+          "lat": -22.871756,
+          "long": -43.784022
+        },
+        "region": [{ "name": "Itaguaí" }],
+        "coord": [
+          {
+            "name": "Israel Côrtes Santos",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["israelcortespsi@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPSi - Casinha Azul",
+        "type": "CAPS",
+        "phone": ["(21) 3781-2265", "(21) 3782-9000 R 4941"],
+        "email": ["caps.infantil@bol.com.br"],
+        "address": {
+          "street": "Reverendo Otávio Luis Vieira",
+          "district": "Centro",
+          "houseNumber": "545",
+          "lat": -22.866814,
+          "long": -43.776363
+        },
+        "region": [{ "name": "Itaguaí" }],
+        "coord": [
+          {
+            "name": "Fernanda Nogueira",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["fernanda.fpm13@gmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Duque de Caxias",
+    "federationUnity": "RJ",
+    "servicesList": [
+      {
+        "name": "CAPS II - Leslie S. Chavim",
+        "type": "CAPS",
+        "phone": ["(21) 2671-5806"],
+        "email": ["capscaxias@ig.com.br"],
+        "address": {
+          "street": "Marechal Deodoro",
+          "district": "25 de Agosto",
+          "houseNumber": "147",
+          "lat": -22.793544,
+          "long": -43.304208
+        },
+        "region": [{ "name": "Duque de Caxias" }],
+        "coord": [
+          {
+            "name": "Valéria Candida",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPS II",
+        "type": "CAPS",
+        "phone": ["(21) 3661-0891"],
+        "email": ["capsimbarie@hotmail.com"],
+        "address": {
+          "street": "Uruana",
+          "district": "Imbariê",
+          "houseNumber": "Lt. 2, Qdra. 17",
+          "lat": -22.638012,
+          "long": -43.216808
+        },
+        "region": [{ "name": "Duque de Caxias" }],
+        "coord": [
+          {
+            "name": "Márcia Cristina",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["mcpsicologia@globo.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPSi",
+        "type": "CAPS",
+        "phone": ["(21) 2772-7569", "(21) 2653-1658", "(21) 2672-3888"],
+        "email": ["capsijinf@gmail.com"],
+        "address": {
+          "street": "Marechal Floriano",
+          "district": "25 de Agosto",
+          "houseNumber": "966",
+          "lat": -22.791789,
+          "long": -43.216808
+        },
+        "region": [{ "name": "Duque de Caxias" }],
+        "coord": [
+          { "name": "Jacinta Reis", "type": "GERAL", "phone": [], "email": [] }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPSad II - Renato Russo",
+        "type": "CAPS",
+        "phone": ["(21) 2673-6144", "(21) 2672-3370"],
+        "email": ["capsadduquedecaxias@gmail.com"],
+        "address": {
+          "street": "Nilo Vieira ",
+          "district": "Centro",
+          "houseNumber": "353",
+          "lat": -22.784856,
+          "long": -43.31568
+        },
+        "region": [{ "name": "Duque de Caxias" }],
+        "coord": [
+          {
+            "name": "Elizabeth Louzão",
+            "type": "GERAL",
+            "phone": [],
+            "email": ["betelousao@hotmail.com"]
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Belford Roxo",
+    "federationUnity": "RJ",
+    "servicesList": [
+      {
+        "name": "CAPS II",
+        "type": "CAPS",
+        "phone": ["(21) 2761-0091", "(21) 2762-1647"],
+        "email": ["caps2adulto@gmail.com"],
+        "address": {
+          "street": "Expedicionário E. Batista",
+          "district": "Areia Branca",
+          "houseNumber": "294/296",
+          "lat": -22.754509,
+          "long": -43.409361
+        },
+        "region": [{ "name": "Belford Roxo" }],
+        "coord": [
+          {
+            "name": "Vander S. Sievi",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPSi",
+        "type": "CAPS",
+        "phone": ["(21) 2779-5549"],
+        "email": ["capsib.roxo@gmail.com"],
+        "address": {
+          "street": "João Fernandes Neto",
+          "district": "Centro",
+          "houseNumber": "920",
+          "lat": -22.766543,
+          "long": -43.398237
+        },
+        "region": [{ "name": "Belford Roxo" }],
+        "coord": [
+          {
+            "name": "Angela Cristina Flores",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      },
+      {
+        "name": "CAPSad - Zaira Bichieri",
+        "type": "CAPS",
+        "phone": ["(21) 3662-0832"],
+        "email": ["capsadbr@hotmail.com"],
+        "address": {
+          "street": "Adil Miranda",
+          "district": "Centro",
+          "houseNumber": "98",
+          "lat": -22.763911,
+          "long": -43.401983
+        },
+        "region": [{ "name": "Belford Roxo" }],
+        "coord": [
+          {
+            "name": "Mônica Marins Carneiro",
+            "type": "GERAL",
+            "phone": [],
+            "email": []
+          }
+        ],
+        "reception": [
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 2 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 3 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 4 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 5 },
+          { "openingHour": "08:00", "closingHour": "17:00", "weekDay": 6 }
+        ]
+      }
+    ]
+  }
+]
+
