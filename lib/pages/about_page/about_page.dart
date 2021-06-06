@@ -11,7 +11,7 @@ class AboutPage extends StatelessWidget {
               Container(
                   padding: const EdgeInsets.only(left: 10.0),
                   child: Text(
-                      "O um aplicativo fornece a localização e informaçõs referente aos centros de atendimento de saúde mental no estado do Rio de Janeiro, permitindo assim a identificação do posto de atendimento procurado pelo usuário. ",
+                      "O Sabegra Saúde Mental é um aplicativo que fornece a localização e informações referentes aos centros de atendimento de saúde mental no Estado do Rio de Janeiro. Através de uma simples pesquisa, o usuário pode pesquisar por uma cidade, por exemplo, e visualizar no mapa as localizações marcadas dos postos de atendimento de saúde mental naquele local pesquisado e, assim, ao clicar em um determinado marcador do mapa, visualizar todas as informações pertinentes à aquele determinado posto de atendimento.",
                       style: TextStyle(fontSize: 18))),
               Padding(padding: const EdgeInsets.only(top: 20.0)),
               Container(

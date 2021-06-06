@@ -4,14 +4,15 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:mobx/mobx.dart';
-import 'package:sabegra_saude_mental/core/util/getInfo.dart';
-import 'package:sabegra_saude_mental/data/entities/search_result.dart';
-import 'package:sabegra_saude_mental/data/entities/service.dart';
-import 'package:sabegra_saude_mental/widgets/maps_launcher_widget.dart';
-import 'package:sabegra_saude_mental/pages/maps_page/controller/maps_controller.dart';
-import 'package:sabegra_saude_mental/widgets/generate_list_items.dart';
-import 'package:sabegra_saude_mental/widgets/show_mapa_page.dart';
-import 'package:sabegra_saude_mental/widgets/menu_widget.dart';
+import 'package:saude_mental_sus/core/util/getInfo.dart';
+import 'package:saude_mental_sus/data/entities/search_result.dart';
+import 'package:saude_mental_sus/data/entities/service.dart';
+import 'package:saude_mental_sus/widgets/maps_launcher_widget.dart';
+import 'package:saude_mental_sus/pages/maps_page/controller/maps_controller.dart';
+import 'package:saude_mental_sus/widgets/generate_list_items.dart';
+import 'package:saude_mental_sus/widgets/show_mapa_page.dart';
+import 'package:saude_mental_sus/widgets/menu_widget.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../../injection_container.dart';
 
 class MapsPage extends StatefulWidget {
@@ -77,7 +78,7 @@ class _MapsPageState extends State<MapsPage> {
                 alignment: Alignment(-0.40, 0.97),
                 child: FloatingActionButton.extended(
                   onPressed: () {
-                    //launch("tel:${188}");
+                    launch("tel:${192}");
                   },
                   icon: Icon(Icons.call),
                   label: Text('SAMU'),
@@ -88,7 +89,7 @@ class _MapsPageState extends State<MapsPage> {
                 alignment: Alignment(0.40, 0.97),
                 child: FloatingActionButton.extended(
                   onPressed: () {
-                    //launch("tel:${190}");
+                    launch("tel:${188}");
                   },
                   icon: Icon(Icons.call),
                   label: Text('CVV'),

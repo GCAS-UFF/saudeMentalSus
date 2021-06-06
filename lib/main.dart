@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sabegra_saude_mental/pages/maps_page/controller/maps_controller.dart';
-import 'package:sabegra_saude_mental/pages/splash_page/controller/splash_controller.dart';
-import 'package:sabegra_saude_mental/pages/splash_page/splash_page.dart';
+import 'package:saude_mental_sus/pages/maps_page/controller/maps_controller.dart';
+import 'package:saude_mental_sus/pages/splash_page/controller/splash_controller.dart';
+import 'package:saude_mental_sus/pages/splash_page/splash_page.dart';
 import 'injection_container.dart' as di;
 
 Future<void> main() async {

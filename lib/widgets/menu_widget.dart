@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:sabegra_saude_mental/pages/about_page/about_page.dart';
-import 'package:sabegra_saude_mental/pages/equipe_pesquisa_page/equipe_pesquisa_page.dart';
+import 'package:saude_mental_sus/pages/about_page/about_page.dart';
+import 'package:saude_mental_sus/pages/equipe_pesquisa_page/equipe_pesquisa_page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MenuWidget extends StatelessWidget {
@@ -26,7 +26,7 @@ class MenuWidget extends StatelessWidget {
             leading: Icon(Icons.group, color: Colors.blue, size: 30.0),
             title: Text(
               'Equipe da Pesquisa',
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 16),
             ),
             onTap: () => {
               Navigator.push(
@@ -41,7 +41,7 @@ class MenuWidget extends StatelessWidget {
                   color: Colors.blue, size: 30.0),
               title: Text(
                 'Saúde Mental e Bem Estar UFF',
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(fontSize: 16),
               ),
               onTap: () => {
                     getUrl(
@@ -52,7 +52,7 @@ class MenuWidget extends StatelessWidget {
             leading: Icon(Icons.phone_android, color: Colors.blue, size: 30.0),
             title: Text(
               'Aplicativo Saúde Mental',
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 16),
             ),
             subtitle: Text(
               "Ministério da Saúde",
@@ -65,7 +65,7 @@ class MenuWidget extends StatelessWidget {
             leading: Icon(Icons.info, color: Colors.blue, size: 30.0),
             title: Text(
               'Sobre',
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 16),
             ),
             onTap: () => {
               Navigator.push(
@@ -79,7 +79,7 @@ class MenuWidget extends StatelessWidget {
             leading: Icon(Icons.close, color: Colors.blue, size: 30.0),
             title: Text(
               'Fechar',
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 16),
             ),
             onTap: () => {Navigator.pop(context)},
           ),

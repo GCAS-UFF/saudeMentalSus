@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:sabegra_saude_mental/core/error/failure.dart';
-import 'package:sabegra_saude_mental/core/usecases/usecase.dart';
-import 'package:sabegra_saude_mental/data/entities/search_result.dart';
-import 'package:sabegra_saude_mental/repository/interfaces/maps_repository.dart';
+import 'package:saude_mental_sus/core/error/failure.dart';
+import 'package:saude_mental_sus/core/usecases/usecase.dart';
+import 'package:saude_mental_sus/data/entities/search_result.dart';
+import 'package:saude_mental_sus/repository/interfaces/maps_repository.dart';
 
 class SearchServices extends UseCase<List<SearchResult>, Params> {
   final MapsRepository mapsRepository;

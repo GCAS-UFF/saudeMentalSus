@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:sabegra_saude_mental/core/util/getInfo.dart';
+import 'package:saude_mental_sus/core/util/getInfo.dart';
 
 class Reception extends Equatable {
   final String openingHour;

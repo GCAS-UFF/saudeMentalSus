@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
 import 'package:mobx/mobx.dart';
-import 'package:sabegra_saude_mental/core/error/failure.dart';
-import 'package:sabegra_saude_mental/data/entities/search_result.dart';
-import 'package:sabegra_saude_mental/services/search_services.dart';
+import 'package:saude_mental_sus/core/error/failure.dart';
+import 'package:saude_mental_sus/data/entities/search_result.dart';
+import 'package:saude_mental_sus/services/search_services.dart';
 
 part 'maps_controller.g.dart';
 

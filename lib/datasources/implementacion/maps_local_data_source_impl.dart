@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'package:geolocator/geolocator.dart';
-import 'package:sabegra_saude_mental/core/error/exception.dart';
-import 'package:sabegra_saude_mental/core/resources/keys.dart';
-import 'package:sabegra_saude_mental/data/models/search_result_model.dart';
-import 'package:sabegra_saude_mental/data/models/service_model.dart';
+import 'package:saude_mental_sus/core/error/exception.dart';
+import 'package:saude_mental_sus/core/resources/keys.dart';
+import 'package:saude_mental_sus/data/models/search_result_model.dart';
+import 'package:saude_mental_sus/data/models/service_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../interfaces/maps_local_data_source.dart';

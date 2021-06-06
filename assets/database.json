@@ -189,8 +189,8 @@
           "street": "Pça. Vital Brasil, s/nº - Vital Brasil - CEP: 24.230-265",
           "district": "Santa Rosa",
           "houseNumber": "",
-          "lat": -22.9080446,
-          "long": -43.100959
+          "lat": -22.90485,
+          "long": -43.09767
         },
         "region": [{ "name": "Santa Rosa" }],
         "coord": [],
@@ -211,8 +211,8 @@
           "street": "Rua Presidente Craveiro Lopes",
           "district": "Barreto",
           "houseNumber": "726",
-          "lat": -22.9080446,
-          "long": -43.100959
+          "lat": -22.86479,
+          "long": -43.09899
         },
         "region": [{ "name": "Barreto" }],
         "coord": [],
@@ -233,8 +233,8 @@
           "street": "Rua Desembargador Lima Castro",
           "district": "Fonseca",
           "houseNumber": "238",
-          "lat": -22.9080446,
-          "long": -43.100959
+          "lat": -22.88648,
+          "long": -43.08695
         },
         "region": [{ "name": "Fonseca" }],
         "coord": [],
@@ -255,8 +255,8 @@
           "street": "Av. Jansen de Melo",
           "district": "São Lourenço",
           "houseNumber": "",
-          "lat": -22.9080446,
-          "long": -43.100959
+          "lat": -22.88728,
+          "long": -43.11519
         },
         "region": [{ "name": "Fonseca" }],
         "coord": [],
@@ -277,8 +277,8 @@
           "street": "Rua Ver. Armando Ferreira",
           "district": "Largo da Batalha",
           "houseNumber": "30",
-          "lat": -22.9080446,
-          "long": -43.100959
+          "lat": -22.90721,
+          "long": -43.06748
         },
         "region": [{ "name": "Largo da Batalha" }],
         "coord": [],
@@ -304,8 +304,8 @@
           "street": "Avenida Quintino Bocaiuva",
           "district": "Charitas",
           "houseNumber": "",
-          "lat": -22.9080446,
-          "long": -43.100959
+          "lat": -22.93255,
+          "long": -43.09776
         },
         "region": [{ "name": "Charitas" }],
         "coord": [],
@@ -328,8 +328,8 @@
           "street": "Rua Marcolino Gomes Candau",
           "district": "Piratininga",
           "houseNumber": "11",
-          "lat": -22.9080446,
-          "long": -43.100959
+          "lat": -22.95144,
+          "long": -43.08779
         },
         "region": [{ "name": "Piratininga" }],
         "coord": [],

@@ -55,11 +55,10 @@ class _ShowMapState extends State<ShowMap> {
               zoom: (flag) ? 0 : 16.0),
           zoomGesturesEnabled: true,
           markers: markers,
-          //onTap: ,
         ),
       ),
       Positioned(
-        top: 30.0,
+        top: 40.0,
         right: 15.0,
         left: 15.0,
         child: Container(
@@ -82,7 +81,7 @@ class _ShowMapState extends State<ShowMap> {
                       controller: _textController,
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        hintText: "Buscar",
+                        hintText: "Pesquisar",
                       ),
                       onChanged: (val) {
                         setState(() {

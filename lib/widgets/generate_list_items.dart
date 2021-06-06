@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sabegra_saude_mental/data/entities/reception.dart';
-import 'package:sabegra_saude_mental/services/call_and_message_service.dart';
+import 'package:saude_mental_sus/data/entities/reception.dart';
+import 'package:saude_mental_sus/services/call_and_message_service.dart';
 
 class GenerateListItems {
   static Visibility generateListTile(List<String> list, IconData icon) =>

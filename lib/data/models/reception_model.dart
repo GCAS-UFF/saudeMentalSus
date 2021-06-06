@@ -1,4 +1,4 @@
-import 'package:sabegra_saude_mental/data/entities/reception.dart';
+import 'package:saude_mental_sus/data/entities/reception.dart';
 
 class ReceptionModel extends Reception {
   ReceptionModel({required weekDay, required openingHour, required closingHour})

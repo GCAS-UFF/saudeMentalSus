@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:sabegra_saude_mental/core/error/failure.dart';
-import 'package:sabegra_saude_mental/core/usecases/usecase.dart';
-import 'package:sabegra_saude_mental/repository/interfaces/maps_repository.dart';
+import 'package:saude_mental_sus/core/error/failure.dart';
+import 'package:saude_mental_sus/core/usecases/usecase.dart';
+import 'package:saude_mental_sus/repository/interfaces/maps_repository.dart';
 
 class GetCurrentPosition extends UseCase<Position, NoParams> {
   final MapsRepository mapsRepository;

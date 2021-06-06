@@ -1,4 +1,4 @@
-import 'package:sabegra_saude_mental/data/entities/region.dart';
+import 'package:saude_mental_sus/data/entities/region.dart';
 
 class RegionModel extends Region {
   RegionModel({required name}) : super(name: name);

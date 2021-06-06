@@ -1,5 +1,5 @@
 import 'package:geolocator/geolocator.dart';
-import 'package:sabegra_saude_mental/data/entities/geolocation_point.dart';
+import 'package:saude_mental_sus/data/entities/geolocation_point.dart';
 
 class GeolocationPointModel extends GeolocationPoint {
   GeolocationPointModel({required latitude, required longitude})

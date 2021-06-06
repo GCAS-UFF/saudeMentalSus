@@ -1,11 +1,11 @@
 import 'package:geolocator/geolocator.dart';
-import 'package:sabegra_saude_mental/core/error/exception.dart';
-import 'package:sabegra_saude_mental/core/error/failure.dart';
-import 'package:sabegra_saude_mental/data/entities/search_result.dart';
-import 'package:sabegra_saude_mental/datasources/interfaces/maps_local_data_source.dart';
+import 'package:saude_mental_sus/core/error/exception.dart';
+import 'package:saude_mental_sus/core/error/failure.dart';
+import 'package:saude_mental_sus/data/entities/search_result.dart';
+import 'package:saude_mental_sus/datasources/interfaces/maps_local_data_source.dart';
 
 import 'package:dartz/dartz.dart';
-import 'package:sabegra_saude_mental/repository/interfaces/maps_repository.dart';
+import 'package:saude_mental_sus/repository/interfaces/maps_repository.dart';
 
 class MapsRepositoryImpl extends MapsRepository {
   final MapsLocalDataSource localDataSource;
