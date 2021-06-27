@@ -1,10 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:mobx/mobx.dart';
-import 'package:saude_mental_sus/core/error/failure.dart';
-import 'package:saude_mental_sus/core/usecases/usecase.dart';
-import 'package:saude_mental_sus/services/current_position_service.dart';
-import 'package:saude_mental_sus/services/load_city_services.dart';
+import 'package:saudeMentalSus/core/error/failure.dart';
+import 'package:saudeMentalSus/core/usecases/usecase.dart';
+import 'package:saudeMentalSus/services/current_position_service.dart';
+import 'package:saudeMentalSus/services/load_city_services.dart';
 
 part 'splash_controller.g.dart';
 

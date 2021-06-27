@@ -1,4 +1,4 @@
-import 'package:saude_mental_sus/data/entities/reception.dart';
+import 'package:saudeMentalSus/data/entities/reception.dart';
 
 class ReceptionModel extends Reception {
   ReceptionModel({required weekDay, required openingHour, required closingHour})

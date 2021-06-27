@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:saude_mental_sus/pages/about_page/about_page.dart';
-import 'package:saude_mental_sus/pages/equipe_pesquisa_page/equipe_pesquisa_page.dart';
+import 'package:saudeMentalSus/pages/about_page/about_page.dart';
+import 'package:saudeMentalSus/pages/equipe_pesquisa_page/equipe_pesquisa_page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MenuWidget extends StatelessWidget {
@@ -59,6 +59,20 @@ class MenuWidget extends StatelessWidget {
               style: TextStyle(fontSize: 16.5),
             ),
             onTap: () => {getUrl('https://mobilems.saude.gov.br/saude-mental')},
+          ),
+          Divider(),
+          ListTile(
+            leading: ImageIcon(
+              AssetImage("assets/images/avaliacao.png"), 
+              color: Colors.blue, size: 30.0),
+            title: Text(
+              'Avalie-nos',
+              style: TextStyle(fontSize: 16),
+            ),
+            onTap: () => {
+               launch('https://docs.google.com/forms/d/e/1FAIpQLSczikDb2q0U3maX8v1nerGNRlzIh9BlCwOQbxhMz1ZkX9d9kw/closedform')
+              
+            },
           ),
           Divider(),
           ListTile(

@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:saude_mental_sus/pages/maps_page/controller/maps_controller.dart';
-import 'package:saude_mental_sus/pages/splash_page/controller/splash_controller.dart';
-import 'package:saude_mental_sus/pages/splash_page/splash_page.dart';
+import 'package:saudeMentalSus/pages/maps_page/controller/maps_controller.dart';
+import 'package:saudeMentalSus/pages/splash_page/controller/splash_controller.dart';
+import 'package:saudeMentalSus/pages/splash_page/splash_page.dart';
 import 'injection_container.dart' as di;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // debugPaintSizeEnabled = true;
   await di.init();
   runApp(MentalPlus());
 }
@@ -16,7 +15,7 @@ class MentalPlus extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Saúde Mental SUS',
+      title: 'Sabegra Saúde Mental',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

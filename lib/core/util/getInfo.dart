@@ -1,4 +1,4 @@
-import 'package:saude_mental_sus/core/util/converter.dart';
+import 'package:saudeMentalSus/core/util/converter.dart';
 
 class GetInfo {
   static String getValueFromEnum(Object o) {

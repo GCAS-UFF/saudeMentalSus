@@ -1,11 +1,11 @@
 import 'package:geolocator/geolocator.dart';
-import 'package:saude_mental_sus/core/error/exception.dart';
-import 'package:saude_mental_sus/core/error/failure.dart';
-import 'package:saude_mental_sus/data/entities/search_result.dart';
-import 'package:saude_mental_sus/datasources/interfaces/maps_local_data_source.dart';
+import 'package:saudeMentalSus/core/error/exception.dart';
+import 'package:saudeMentalSus/core/error/failure.dart';
+import 'package:saudeMentalSus/data/entities/search_result.dart';
+import 'package:saudeMentalSus/datasources/interfaces/maps_local_data_source.dart';
 
 import 'package:dartz/dartz.dart';
-import 'package:saude_mental_sus/repository/interfaces/maps_repository.dart';
+import 'package:saudeMentalSus/repository/interfaces/maps_repository.dart';
 
 class MapsRepositoryImpl extends MapsRepository {
   final MapsLocalDataSource localDataSource;

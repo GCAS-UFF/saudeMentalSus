@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:saude_mental_sus/core/error/exception.dart';
-import 'package:saude_mental_sus/core/resources/keys.dart';
-import 'package:saude_mental_sus/data/models/city_model.dart';
-import 'package:saude_mental_sus/data/models/service_model.dart';
+import 'package:saudeMentalSus/core/error/exception.dart';
+import 'package:saudeMentalSus/core/resources/keys.dart';
+import 'package:saudeMentalSus/data/models/city_model.dart';
+import 'package:saudeMentalSus/data/models/service_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../interfaces/splash_local_data_source.dart';

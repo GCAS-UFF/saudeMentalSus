@@ -4,8 +4,8 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:mobx/mobx.dart';
-import 'package:saude_mental_sus/pages/maps_page/maps_page.dart';
-import 'package:saude_mental_sus/pages/splash_page/controller/splash_controller.dart';
+import 'package:saudeMentalSus/pages/maps_page/maps_page.dart';
+import 'package:saudeMentalSus/pages/splash_page/controller/splash_controller.dart';
 
 import '../../injection_container.dart';
 

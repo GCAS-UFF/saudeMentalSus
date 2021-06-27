@@ -1,5 +1,5 @@
-import 'package:saude_mental_sus/core/util/converter.dart';
-import 'package:saude_mental_sus/data/entities/coord.dart';
+import 'package:saudeMentalSus/core/util/converter.dart';
+import 'package:saudeMentalSus/data/entities/coord.dart';
 
 class CoordModel extends Coord {
   CoordModel({required name, required type, required phones, required emails})

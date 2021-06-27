@@ -43,7 +43,6 @@ class _MapWidgetState extends State<MapWidget> {
             zoom: (flag) ? 0 : 16.0),
         zoomGesturesEnabled: true,
         markers: markers,
-        //onTap: ,
       ),
     );
   }

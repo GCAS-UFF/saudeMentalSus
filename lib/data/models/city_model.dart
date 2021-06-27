@@ -1,5 +1,5 @@
 import 'service_model.dart';
-import 'package:saude_mental_sus/data/entities/city.dart';
+import 'package:saudeMentalSus/data/entities/city.dart';
 
 class CityModel extends City {
   CityModel({required name, required servicesList, required federationUnity})

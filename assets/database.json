@@ -12,8 +12,8 @@
           "street": "Alameda São Boaventura",
           "district": "Fonseca",
           "houseNumber": "129",
-          "lat": -22.8811044,
-          "long": -43.0946062
+          "lat": -22.88019098333371, 
+          "long": -43.106352244745466
         },
         "region": [{ "name": "ALL" }],
         "coord": [
@@ -44,8 +44,8 @@
           "street": "Rua Marquês de Olinda",
           "district": "Centro",
           "houseNumber": "104",
-          "lat": -22.8939738,
-          "long": -43.1145584
+          "lat": -22.89259332304291, 
+          "long": -43.1145790623306
         },
         "region": [
           { "name": "Boa Viagem" },
@@ -97,8 +97,8 @@
           "street": "Rua Nilo de Freitas",
           "district": "Largo da Batalha",
           "houseNumber": "41",
-          "lat": -22.9075542,
-          "long": -43.0663884
+          "lat": -22.906810981937156, 
+          "long": -43.06633947396672
         },
         "region": [
           { "name": "Ingá" },
@@ -157,11 +157,11 @@
         "phone": ["(21) 2621-6598"],
         "email": ["capsiml2016@hotmail.com"],
         "address": {
-          "street": "Avenida Ari Parreiras",
+          "street": "Avenida Ary Parreiras",
           "district": "Santa Rosa",
           "houseNumber": "649",
-          "lat": -22.9080446,
-          "long": -43.100959
+          "lat":-22.904221292220583, 
+          "long": -43.09622636047581
         },
         "region": [{ "name": "ALL" }],
         "coord": [
@@ -186,11 +186,11 @@
         "phone": ["(21) 2711-2366", "(21) 2610-8975", "(21) 2710-9176"],
         "email": ["prsa@saude.niteroi.rj.gov"],
         "address": {
-          "street": "Pça. Vital Brasil, s/nº - Vital Brasil - CEP: 24.230-265",
+          "street": "Praça Vital Brasil",
           "district": "Santa Rosa",
-          "houseNumber": "",
-          "lat": -22.90485,
-          "long": -43.09767
+          "houseNumber": "S/N",
+          "lat": -22.904688747537563, 
+          "long": -43.09767346212733
         },
         "region": [{ "name": "Santa Rosa" }],
         "coord": [],
@@ -211,8 +211,8 @@
           "street": "Rua Presidente Craveiro Lopes",
           "district": "Barreto",
           "houseNumber": "726",
-          "lat": -22.86479,
-          "long": -43.09899
+          "lat": -22.86474475469691, 
+          "long": -43.09970894884018
         },
         "region": [{ "name": "Barreto" }],
         "coord": [],
@@ -233,8 +233,8 @@
           "street": "Rua Desembargador Lima Castro",
           "district": "Fonseca",
           "houseNumber": "238",
-          "lat": -22.88648,
-          "long": -43.08695
+          "lat": -22.88412513503283, 
+          "long": -43.08663122909455
         },
         "region": [{ "name": "Fonseca" }],
         "coord": [],
@@ -252,11 +252,11 @@
         "phone": ["(21) 2719-0050", "(21) 2717-1426", "(21) 9118-7505"],
         "email": ["prcas@saude.niteroi.rj.gov.br"],
         "address": {
-          "street": "Av. Jansen de Melo",
+          "street": "Avenida Jansen de Melo",
           "district": "São Lourenço",
-          "houseNumber": "",
-          "lat": -22.88728,
-          "long": -43.11519
+          "houseNumber": "S/N",
+          "lat":  -22.887201949088496, 
+          "long": -43.115230660476136
         },
         "region": [{ "name": "Fonseca" }],
         "coord": [],
@@ -277,8 +277,8 @@
           "street": "Rua Ver. Armando Ferreira",
           "district": "Largo da Batalha",
           "houseNumber": "30",
-          "lat": -22.90721,
-          "long": -43.06748
+          "lat": -22.90559269580949, 
+          "long": -43.0676168137606
         },
         "region": [{ "name": "Largo da Batalha" }],
         "coord": [],
@@ -303,9 +303,9 @@
         "address": {
           "street": "Avenida Quintino Bocaiuva",
           "district": "Charitas",
-          "houseNumber": "",
-          "lat": -22.93255,
-          "long": -43.09776
+          "houseNumber": "S/N",
+          "lat": -22.932468039792223, 
+          "long": -43.097660346984206
         },
         "region": [{ "name": "Charitas" }],
         "coord": [],
@@ -327,9 +327,9 @@
         "address": {
           "street": "Rua Marcolino Gomes Candau",
           "district": "Piratininga",
-          "houseNumber": "11",
-          "lat": -22.95144,
-          "long": -43.08779
+          "houseNumber": "111",
+          "lat": -22.949647803949418, 
+          "long": -43.093816345526825
         },
         "region": [{ "name": "Piratininga" }],
         "coord": [],

@@ -1,8 +1,8 @@
-import 'package:saude_mental_sus/core/util/converter.dart';
+import 'package:saudeMentalSus/core/util/converter.dart';
 import 'address_model.dart';
 import 'reception_model.dart';
 import 'region_model.dart';
-import 'package:saude_mental_sus/data/entities/service.dart';
+import 'package:saudeMentalSus/data/entities/service.dart';
 
 import 'coord_model.dart';
 

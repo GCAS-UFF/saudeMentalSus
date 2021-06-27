@@ -1,4 +1,4 @@
-package com.saude_mental_sus.sabegra
+package com.saudeMentalSus.sabegra
 
 import io.flutter.embedding.android.FlutterActivity
 

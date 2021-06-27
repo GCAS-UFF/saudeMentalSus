@@ -1,5 +1,5 @@
 import 'geolocation_point_model.dart';
-import 'package:saude_mental_sus/data/entities/address.dart';
+import 'package:saudeMentalSus/data/entities/address.dart';
 
 class AddressModel extends Address {
   AddressModel(

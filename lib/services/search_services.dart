@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:saude_mental_sus/core/error/failure.dart';
-import 'package:saude_mental_sus/core/usecases/usecase.dart';
-import 'package:saude_mental_sus/data/entities/search_result.dart';
-import 'package:saude_mental_sus/repository/interfaces/maps_repository.dart';
+import 'package:saudeMentalSus/core/error/failure.dart';
+import 'package:saudeMentalSus/core/usecases/usecase.dart';
+import 'package:saudeMentalSus/data/entities/search_result.dart';
+import 'package:saudeMentalSus/repository/interfaces/maps_repository.dart';
 
 class SearchServices extends UseCase<List<SearchResult>, Params> {
   final MapsRepository mapsRepository;

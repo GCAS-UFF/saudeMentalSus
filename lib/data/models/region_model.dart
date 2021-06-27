@@ -1,4 +1,4 @@
-import 'package:saude_mental_sus/data/entities/region.dart';
+import 'package:saudeMentalSus/data/entities/region.dart';
 
 class RegionModel extends Region {
   RegionModel({required name}) : super(name: name);

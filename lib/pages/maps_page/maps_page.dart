@@ -4,14 +4,14 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:mobx/mobx.dart';
-import 'package:saude_mental_sus/core/util/getInfo.dart';
-import 'package:saude_mental_sus/data/entities/search_result.dart';
-import 'package:saude_mental_sus/data/entities/service.dart';
-import 'package:saude_mental_sus/widgets/maps_launcher_widget.dart';
-import 'package:saude_mental_sus/pages/maps_page/controller/maps_controller.dart';
-import 'package:saude_mental_sus/widgets/generate_list_items.dart';
-import 'package:saude_mental_sus/widgets/show_mapa_page.dart';
-import 'package:saude_mental_sus/widgets/menu_widget.dart';
+import 'package:saudeMentalSus/core/util/getInfo.dart';
+import 'package:saudeMentalSus/data/entities/search_result.dart';
+import 'package:saudeMentalSus/data/entities/service.dart';
+import 'package:saudeMentalSus/widgets/maps_launcher_widget.dart';
+import 'package:saudeMentalSus/pages/maps_page/controller/maps_controller.dart';
+import 'package:saudeMentalSus/widgets/generate_list_items.dart';
+import 'package:saudeMentalSus/widgets/show_mapa_page.dart';
+import 'package:saudeMentalSus/widgets/menu_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../injection_container.dart';
 
@@ -105,7 +105,6 @@ class _MapsPageState extends State<MapsPage> {
       result.services.value.forEach((service) {
         markers.add(Marker(
             onTap: () {
-              print('tocou');
               _showCard(context, service);
             },
             infoWindow: InfoWindow(
