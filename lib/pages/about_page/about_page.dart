@@ -19,7 +19,7 @@ class AboutPage extends StatelessWidget {
                 Text("Versão:",
                     style:
                         TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                Text("1.1", style: TextStyle(fontSize: 18))
+                Text("1.2", style: TextStyle(fontSize: 18))
               ])),
               Padding(padding: const EdgeInsets.only(top: 20.0)),
               Container(
